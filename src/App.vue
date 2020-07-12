@@ -1,6 +1,6 @@
 <template>
-  <div id="app"></div>
+  <div id="app">hoge</div>
 </template>
 
-<style>
+<style lang="scss" src="@/assets/scss_files/App.vue_scss/style.scss">
 </style>
