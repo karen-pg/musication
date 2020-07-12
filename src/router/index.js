@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Top from "./views/Top.vue";
-import Menu from "./views/Menu.vue";
-import Info from "./views/Info.vue";
+import Top from "@/views/Top.vue";
+import Menu from "@/views/Menu.vue";
+import Info from "@/views/Info.vue";
 
 Vue.use(VueRouter);
 

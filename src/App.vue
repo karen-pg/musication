@@ -1,5 +1,7 @@
 <template>
-  <div id="app">hoge</div>
+  <div id="app">
+    <router-view></router-view>
+  </div>
 </template>
 
 <style lang="scss" src="@/assets/scss_files/App.vue_scss/style.scss">
