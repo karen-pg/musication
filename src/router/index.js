@@ -1,15 +1,15 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Top from "@/views/Top.vue";
-import Menu from "@/views/Menu.vue";
-import Info from "@/views/Info.vue";
+import Login from "@/views/Login.vue";
+import Sign from "@/views/Sign.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   { path: "/", component: Top },
-  { path: "/menu", component: Menu },
-  { path: "/info", component: Info },
+  { path: "/login", component: Login },
+  { path: "/sign", component: Sign },
   { path: "*", redirect: "/" },
 ];
 
