@@ -4,7 +4,7 @@
       <h1 id="header-logo">MUSICATION</h1>
     </router-link>
     <div>
-      <div id="humberger">
+      <div id="humberger" @click="openMenu()" :class="{open: isOpen}">
         <span></span>
         <span></span>
         <span></span>
@@ -17,6 +17,20 @@
     </div>
   </header>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      isOpen: false
+    };
+  },
+  methods: {
+    openMenu() {
+      this.isOpen = !this.isOpen;
+    }
+  }
+};
+</script>
 <style lang="scss" scoped>
 $base-color: #333;
 $font-color: whitesmoke;
