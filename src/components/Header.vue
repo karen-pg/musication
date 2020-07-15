@@ -1,21 +1,28 @@
 <template>
-  <header>
-    <router-link to="/">
-      <h1 id="header-logo">MUSICATION</h1>
-    </router-link>
-    <div>
-      <div id="humberger" @click="openMenu()" :class="{open: isOpen}">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+  <div>
+    <header>
+      <router-link to="/">
+        <h1 id="header-logo">MUSICATION</h1>
+      </router-link>
       <div>
-        <router-link to="/home" class="header-menu">始める</router-link>
-        <router-link to="/login" class="header-menu">ログイン</router-link>
-        <router-link to="/sign" class="header-menu">新規登録</router-link>
+        <div id="humberger" @click="openMenu()" :class="{open: isOpen}">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div id="header-menus">
+          <router-link to="/home" class="header-menu">始める</router-link>
+          <router-link to="/login" class="header-menu">ログイン</router-link>
+          <router-link to="/sign" class="header-menu">新規登録</router-link>
+        </div>
       </div>
+    </header>
+    <div id="slide-header-menus">
+      <router-link to="/home" class="slide-header-menu">始める</router-link>
+      <router-link to="/login" class="slide-header-menu">ログイン</router-link>
+      <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
     </div>
-  </header>
+  </div>
 </template>
 <script>
 export default {
@@ -35,6 +42,7 @@ export default {
 $base-color: #333;
 $font-color: whitesmoke;
 * {
+  box-sizing: border-box;
   text-decoration: none;
   color: $font-color;
 }
@@ -94,6 +102,20 @@ header {
   @media screen and (min-width: 960px) {
     margin-right: 40px;
     font-size: 1.3em;
+  }
+}
+#slide-header-menus {
+  padding: 10px;
+  background-color: #484848;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  .slide-header-menu {
+    flex-grow: 1;
+    text-align: center;
+    border-right: 1px solid gray;
+    &:nth-child(3) {
+      border: none;
+    }
   }
 }
 </style>
