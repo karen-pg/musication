@@ -11,16 +11,12 @@
           <span></span>
         </div>
         <div id="header-menus">
-          <router-link to="/home" class="header-menu">始める</router-link>
-          <router-link to="/login" class="header-menu">ログイン</router-link>
-          <router-link to="/sign" class="header-menu">新規登録</router-link>
+          <slot name="header-menus"></slot>
         </div>
       </div>
     </header>
     <div id="slide-header-menus">
-      <router-link to="/home" class="slide-header-menu">始める</router-link>
-      <router-link to="/login" class="slide-header-menu">ログイン</router-link>
-      <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
+      <slot name="slide-header-menus"></slot>
     </div>
   </div>
 </template>
@@ -52,6 +48,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  z-index: 20;
 }
 #header-logo {
   font-size: 0.8em;
@@ -92,23 +90,16 @@ header {
     }
   }
 }
-.header-menu {
-  display: none;
-  @media screen and (min-width: 415px) {
-    font-size: 0.8em;
-    margin-right: 20px;
-    display: inline-block;
-  }
-  @media screen and (min-width: 960px) {
-    margin-right: 40px;
-    font-size: 1.3em;
-  }
-}
+
 #slide-header-menus {
+  position: absolute;
+  width: 100%;
   padding: 10px;
   background-color: #484848;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
   display: flex;
+  z-index: 10;
+  transform: translateX(-100%);
   .slide-header-menu {
     flex-grow: 1;
     text-align: center;
