@@ -15,7 +15,7 @@
         </div>
       </div>
     </header>
-    <div id="slide-header-menus">
+    <div id="slide-header-menus" :class="{slide: isOpen}">
       <slot name="slide-header-menus"></slot>
     </div>
   </div>
@@ -99,7 +99,11 @@ header {
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.4);
   display: flex;
   z-index: 10;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  @media screen and (min-width: 415px) {
+    display: none;
+  }
   .slide-header-menu {
     flex-grow: 1;
     text-align: center;
@@ -107,6 +111,9 @@ header {
     &:nth-child(3) {
       border: none;
     }
+  }
+  &.slide {
+    transform: translateY(0);
   }
 }
 </style>
