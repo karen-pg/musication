@@ -40,6 +40,11 @@
         </p>
       </div>
     </section>
+    <section id="descriptions">
+      <div id="description1" class="description"></div>
+      <div id="description1" class="description"></div>
+      <div id="description1" class="description"></div>
+    </section>
   </div>
 </template>
 <script>
