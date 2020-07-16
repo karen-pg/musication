@@ -10,3 +10,13 @@ header {
 .header-menu {
   display: none;
 }
+
+// --ヒーロー--
+#hero {
+  background: {
+    image: url("../../imgs/hougaku_img-670x372.jpg");
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+}
