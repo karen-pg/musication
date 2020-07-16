@@ -28,20 +28,22 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
     text-align: center;
     width: 70%;
     margin: auto;
+    max-width: 200px;
     &-title {
-      margin-bottom: 25px;
+      margin-bottom: 35px;
       h1 {
         font-size: 32px;
         margin-bottom: 10px;
         line-height: 1.3em;
+        text-align: justify-all;
       }
     }
     hr {
-      margin-bottom: 25px;
+      margin-bottom: 33px;
       border: {
         style: none;
         top: 2px solid $font-color;
@@ -55,7 +57,7 @@
 
 .link-btn {
   display: inline-block;
-  width: 70%;
+  width: 80%;
   height: 40px;
   line-height: 40px;
   font-size: 20px;

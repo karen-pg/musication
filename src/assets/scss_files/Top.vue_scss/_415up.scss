@@ -7,23 +7,20 @@
 // --ヒーロー--
 #hero {
   &-container {
-    max-width: 600px;
+    max-width: 250px;
     &-title {
-      margin-bottom: 35px;
+      margin-bottom: 40px;
       h1 {
         font-size: 47px;
         margin-bottom: 20px;
       }
       p {
         font-size: 18px;
-        br {
-          display: none;
-        }
       }
     }
     hr {
-      border-top: 3px solid $font-color;
-      margin-bottom: 35px;
+      border-top: 2px solid $font-color;
+      margin-bottom: 40px;
     }
   }
 }

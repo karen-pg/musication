@@ -16,12 +16,12 @@
       <div id="hero-container">
         <div id="hero-container-title">
           <h1>
-            新しい音楽を
-            <br class="br" />探究しよう
+            音楽を
+            <br />探究しよう
           </h1>
           <p>
-            音楽の輪を広げる
-            <br class="br" />プラットフォーム
+            ようこそ、
+            <br />新しい音楽の世界へ。
           </p>
         </div>
         <hr />
