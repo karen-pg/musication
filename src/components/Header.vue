@@ -35,16 +35,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$base-color: #333;
-$font-color: whitesmoke;
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-  color: $font-color;
-}
+@import "@/assets/scss_files/_import.scss";
 header {
   background-color: $base-color;
-  padding: 10px 30px;
+  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +49,7 @@ header {
   font-size: 0.8em;
   margin: 0;
   @media screen and (min-width: 415px) {
-    font-size: 1em;
+    font-size: 1.1em;
   }
   @media screen and (min-width: 960px) {
     font-size: 1.5em;
