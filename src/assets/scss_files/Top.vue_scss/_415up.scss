@@ -30,3 +30,17 @@
   height: 50px;
   line-height: 50px;
 }
+
+// --イントロ--
+#intro {
+  padding: 170px 70px 20px;
+  > p {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+.explanation {
+  p {
+    font-size: 18px;
+  }
+}
