@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header>
+    <Header id="Header">
       <template v-slot:header-menus>
         <router-link to="/home" class="header-menu">始める</router-link>
         <router-link to="/login" class="header-menu">ログイン</router-link>
@@ -14,12 +14,18 @@
     </Header>
     <section id="hero">
       <div id="hero-container">
-        <div id="hero-title">
-          <h1>新しい音楽を探究しよう</h1>
-          <p>音楽の輪を広げるプラットフォーム</p>
+        <div id="hero-container-title">
+          <h1>
+            新しい音楽を
+            <br />探究しよう
+          </h1>
+          <p>
+            音楽の輪を広げる
+            <br />プラットフォーム
+          </p>
         </div>
         <hr />
-        <router-link to="/home">始める</router-link>
+        <router-link to="/home" class="start-btn link-btn">始める</router-link>
       </div>
     </section>
   </div>
