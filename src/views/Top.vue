@@ -30,7 +30,9 @@
     </section>
     <section id="intro">
       <p>MUSICATIONは、音楽の輪を広げるプラットフォームコンテンツサービスです。</p>
-      <p>創作した音楽の投稿・閲覧、オリジナルプレイリストの作成ができます。</p>
+      <div class="explanation">
+        <p>創作した音楽の投稿・閲覧、オリジナルプレイリストの作成ができます。</p>
+      </div>
     </section>
   </div>
 </template>
