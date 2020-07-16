@@ -1,6 +1,16 @@
 @import "@/assets/scss_files/_import.scss";
 
 // --ヘッダー--
+#body {
+  background: {
+    image: url("../../imgs/hougaku_img-670x372.jpg");
+    repeat: no-repeat;
+    position: bottom;
+    size: cover;
+    attachment: fixed;
+  }
+}
+
 #Header {
   width: 100%;
   position: fixed;
@@ -16,13 +26,7 @@
 
 #hero {
   height: 100vh;
-  background: {
-    image: url("../../imgs/hougaku_img-670x372.jpg");
-    repeat: no-repeat;
-    position: bottom;
-    size: cover;
-    attachment: fixed;
-  }
+
   position: relative;
   &-container {
     position: absolute;
@@ -62,4 +66,9 @@
   line-height: 40px;
   font-size: 20px;
   border-radius: 50px;
+}
+
+#intro {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
 }

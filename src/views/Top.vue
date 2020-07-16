@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="body">
     <Header id="Header">
       <template v-slot:header-menus>
         <router-link to="/home" class="header-menu">始める</router-link>
@@ -27,6 +27,10 @@
         <hr />
         <router-link to="/home" class="start-btn link-btn">始める</router-link>
       </div>
+    </section>
+    <section id="intro">
+      <p>MUSICATIONは、音楽の輪を広げるプラットフォームコンテンツサービスです。</p>
+      <p>創作した音楽の投稿・閲覧、オリジナルプレイリストの作成ができます。</p>
     </section>
   </div>
 </template>
