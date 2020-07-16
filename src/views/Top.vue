@@ -12,6 +12,16 @@
         <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
       </template>
     </Header>
+    <section id="hero">
+      <div id="hero-container">
+        <div id="hero-title">
+          <h1>新しい音楽を探究しよう</h1>
+          <p>音楽の輪を広げるプラットフォーム</p>
+        </div>
+        <hr />
+        <router-link to="/home">始める</router-link>
+      </div>
+    </section>
   </div>
 </template>
 <script>
