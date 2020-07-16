@@ -41,9 +41,33 @@
       </div>
     </section>
     <section id="descriptions">
-      <div id="description1" class="description"></div>
-      <div id="description1" class="description"></div>
-      <div id="description1" class="description"></div>
+      <div id="description1" class="description">
+        <div class="description-img">
+          <img src alt />
+        </div>
+        <div class="description-wrapper">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+      <div id="description2" class="description">
+        <div class="description-img">
+          <img src alt />
+        </div>
+        <div class="description-wrapper">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+      <div id="description3" class="description">
+        <div class="description-img">
+          <img src alt />
+        </div>
+        <div class="description-wrapper">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
     </section>
   </div>
 </template>
