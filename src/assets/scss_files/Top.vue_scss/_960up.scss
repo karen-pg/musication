@@ -33,3 +33,20 @@
   height: 50px;
   line-height: 50px;
 }
+
+// --イントロ--
+#intro {
+  padding: 250px 100px 20px;
+  > h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+    > br {
+      display: none;
+    }
+  }
+}
+.explanation {
+  p {
+    font-size: 20px;
+  }
+}
