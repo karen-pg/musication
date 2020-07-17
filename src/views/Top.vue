@@ -43,7 +43,10 @@
     <section id="descriptions">
       <div id="description1" class="description">
         <div class="description-img">
-          <img src alt />
+          <img
+            src="@/assets/imgs/music-guitar-acoustic-guitar-musician-musical-instrument-bassist-singing-sound-guitarist-drums-bass-guitar-singer-songwriter-string-instrument-plucked-string-instruments-slide-guitar-10690.jpg"
+            alt="ギター"
+          />
         </div>
         <div class="description-wrapper">
           <h3></h3>
@@ -52,7 +55,7 @@
       </div>
       <div id="description2" class="description">
         <div class="description-img">
-          <img src alt />
+          <img src="@/assets/imgs/utGYwaL0fm.jpg" alt="音楽を聴く女性" />
         </div>
         <div class="description-wrapper">
           <h3></h3>
@@ -61,7 +64,10 @@
       </div>
       <div id="description3" class="description">
         <div class="description-img">
-          <img src alt />
+          <img
+            src="@/assets/imgs/person-music-group-guitar-crowd-concert-musician-barcelona-performance-art-festival-saxophone-performance-singing-guitarist-drummer-entertainment-street-musicians-performing-arts-social-gr.jpg"
+            alt="演奏する二人の男性"
+          />
         </div>
         <div class="description-wrapper">
           <h3></h3>

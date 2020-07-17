@@ -93,5 +93,42 @@
 // --ディスクリプション--
 #descriptions {
   background-color: $base-color;
+  padding-top: 150px;
+}
+.description {
   padding: 20px 0;
+  height: 100vh;
+  &-img {
+    height: 80%;
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.5;
+    }
+    > img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+#description1 {
+  .description-img::after {
+    background-image: linear-gradient(80deg, orange, #810000 70%);
+  }
+}
+#description2 {
+  .description-img::after {
+    background-image: linear-gradient(280deg, #d290c0, #441d4f 80%);
+  }
+}
+#description3 {
+  .description-img::after {
+    background-image: linear-gradient(90deg, #ddac61, #695e14 70%);
+  }
 }
