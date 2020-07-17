@@ -51,11 +51,14 @@
 
 // --ディスクリプション--
 #descriptions {
-  padding-top: 200px;
+  padding: 200px 0;
 }
 .description {
+  height: 530px;
+  padding: 0;
+  margin-bottom: 100px;
   &-img {
-    max-height: 600px;
+    height: 100%;
     max-width: 480px;
   }
   &-wrapper {
@@ -67,10 +70,20 @@
     }
   }
 }
-#description2 {
-  .description {
-    &-img {
-      margin-left: auto;
+
+#description {
+  &1 {
+    background-color: #de3c31;
+  }
+  &2 {
+    background-color: #9567c4;
+    .description {
+      &-img {
+        margin-left: auto;
+      }
     }
+  }
+  &3 {
+    background-color: #ddac61;
   }
 }
