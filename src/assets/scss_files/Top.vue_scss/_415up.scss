@@ -41,7 +41,36 @@
   }
 }
 .explanation {
+  .strong {
+    font-size: 25px;
+  }
   p {
     font-size: 18px;
+  }
+}
+
+// --ディスクリプション--
+#descriptions {
+  padding-top: 200px;
+}
+.description {
+  &-img {
+    max-height: 600px;
+    max-width: 480px;
+  }
+  &-wrapper {
+    max-width: 480px;
+    transform: translateX(-35%);
+    > h3 {
+      font-size: 37px;
+      margin-bottom: 15px;
+    }
+  }
+}
+#description2 {
+  .description {
+    &-img {
+      margin-left: auto;
+    }
   }
 }
