@@ -98,12 +98,16 @@
     <section id="close">
       <div class="close-container">
         <div class="close-text">
-          <p></p>
+          <p>
+            さあ
+            <br />音楽を探求する
+            <br />旅に出よう
+          </p>
         </div>
         <div class="close-btns">
           <router-link to="/home" class="link-btn start-btn">始める</router-link>
-          <router-link to="/login" class="link-btn">ログイン</router-link>
-          <router-link to="/sign" class="link-btn">新規登録</router-link>
+          <router-link to="/login" class="link-btn login-btn">ログイン</router-link>
+          <router-link to="/sign" class="link-btn sign-btn">新規登録</router-link>
         </div>
       </div>
     </section>
