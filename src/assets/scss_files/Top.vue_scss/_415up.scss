@@ -104,12 +104,28 @@
         align-items: center;
       }
       &-text {
-        width: 30%;
+        width: 35%;
         text-align: left;
+        font-size: 30px;
+        margin: 0;
       }
       &-btns {
-        width: 30%;
+        width: 20%;
         margin: 0;
+      }
+    }
+  }
+}
+
+// --フッター--
+footer {
+  .footer {
+    &-link {
+      width: 230px;
+    }
+    &-contact {
+      ul li {
+        font-size: 15px;
       }
     }
   }

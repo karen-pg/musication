@@ -82,11 +82,16 @@
 }
 
 // --クローズ--
-#close,
-.close-container {
-  padding: 50px 0;
-  .close-text {
-    font-size: 32px;
+#close {
+  .close {
+    &-container {
+      padding: 50px 0;
+    }
+    &-text {
+      font-size: 46px;
+      line-height: 1.6em;
+      margin-right: 20px;
+    }
   }
 }
 @media screen and (min-width: 1300px) {
