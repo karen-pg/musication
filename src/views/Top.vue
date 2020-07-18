@@ -130,8 +130,10 @@
       </div>
       <div class="footer-contact">
         <ul>
-          <li>プライバシーポリシー</li>
           <li>利用規約</li>
+          <span>｜</span>
+          <li>プライバシーポリシー</li>
+          <span>｜</span>
           <li>お問い合わせ</li>
         </ul>
       </div>

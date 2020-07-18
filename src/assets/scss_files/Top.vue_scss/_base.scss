@@ -200,3 +200,29 @@
     }
   }
 }
+
+// --フッター--
+footer {
+  padding: 30px 50px;
+  background-color: $base-color;
+  text-align: center;
+  .footer {
+    &-link {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto 30px;
+    }
+    &-contact {
+      margin-bottom: 30px;
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          display: inline-block;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
