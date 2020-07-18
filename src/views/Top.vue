@@ -42,50 +42,56 @@
     </section>
     <section id="descriptions">
       <div id="description1" class="description">
-        <div class="description-img">
-          <img
-            src="@/assets/imgs/music-guitar-acoustic-guitar-musician-musical-instrument-bassist-singing-sound-guitarist-drums-bass-guitar-singer-songwriter-string-instrument-plucked-string-instruments-slide-guitar-10690.jpg"
-            alt="ギター"
-          />
-        </div>
-        <div class="description-wrapper explanation">
-          <h3>
-            あなたの
-            <br />音楽を
-            <br />世界へ
-          </h3>
-          <p class="strong">オリジナル楽曲を作成して世界に発信しましょう。</p>
-          <p>あなたのアイディアで新しい音楽を生み出しましょう。</p>
+        <div class="description-container">
+          <div class="description-img">
+            <img
+              src="@/assets/imgs/music-guitar-acoustic-guitar-musician-musical-instrument-bassist-singing-sound-guitarist-drums-bass-guitar-singer-songwriter-string-instrument-plucked-string-instruments-slide-guitar-10690.jpg"
+              alt="ギター"
+            />
+          </div>
+          <div class="description-wrapper explanation">
+            <h3>
+              あなたの
+              <br />音楽を
+              <br />世界へ
+            </h3>
+            <p class="strong">オリジナル楽曲を作成して世界に発信しましょう。</p>
+            <p>あなたのアイディアで新しい音楽を生み出しましょう。</p>
+          </div>
         </div>
       </div>
       <div id="description2" class="description">
-        <div class="description-img">
-          <img src="@/assets/imgs/utGYwaL0fm.jpg" alt="音楽を聴く女性" />
-        </div>
-        <div class="description-wrapper explanation">
-          <h3>
-            ジャンルは
-            <br />無限大
-          </h3>
-          <p class="strong">ユーザーのアイディアが、新しいジャンルを生み出します。</p>
-          <p>ユーザーが作成した個性あふれる楽曲から、最高の音楽と出会いましょう。</p>
+        <div class="description-container">
+          <div class="description-img">
+            <img src="@/assets/imgs/utGYwaL0fm.jpg" alt="音楽を聴く女性" />
+          </div>
+          <div class="description-wrapper explanation">
+            <h3>
+              ジャンルは
+              <br />無限大
+            </h3>
+            <p class="strong">ユーザーのアイディアが、新しいジャンルを生み出します。</p>
+            <p>ユーザーが作成した個性あふれる楽曲から、最高の音楽と出会いましょう。</p>
+          </div>
         </div>
       </div>
       <div id="description3" class="description">
-        <div class="description-img">
-          <img
-            src="@/assets/imgs/person-music-group-guitar-crowd-concert-musician-barcelona-performance-art-festival-saxophone-performance-singing-guitarist-drummer-entertainment-street-musicians-performing-arts-social-gr.jpg"
-            alt="演奏する二人の男性"
-          />
-        </div>
-        <div class="description-wrapper explanation">
-          <h3>
-            新しい
-            <br />仲間を
-            <br />探す
-          </h3>
-          <p class="strong">掲示板で仲間を探すことができます。</p>
-          <p>同じ音楽が好きな仲間はもちろん、一緒に創作活動をする仲間も探すことができます。</p>
+        <div class="description-container">
+          <div class="description-img">
+            <img
+              src="@/assets/imgs/person-music-group-guitar-crowd-concert-musician-barcelona-performance-art-festival-saxophone-performance-singing-guitarist-drummer-entertainment-street-musicians-performing-arts-social-gr.jpg"
+              alt="演奏する二人の男性"
+            />
+          </div>
+          <div class="description-wrapper explanation">
+            <h3>
+              新しい
+              <br />仲間を
+              <br />探す
+            </h3>
+            <p class="strong">掲示板で仲間を探すことができます。</p>
+            <p>同じ音楽が好きな仲間はもちろん、一緒に創作活動をする仲間も探すことができます。</p>
+          </div>
         </div>
       </div>
     </section>

@@ -44,9 +44,39 @@
       display: none;
     }
   }
+  &-explanation {
+    max-width: 800px;
+  }
 }
 .explanation {
   p {
     font-size: 20px;
+  }
+}
+
+// --ディスクリプション--
+#descriptions {
+  padding: 250px 0;
+}
+.description {
+  margin-bottom: 100px;
+  &-container {
+    max-width: 800px;
+    margin: auto;
+    @media screen and(min-width:1300px) {
+      max-width: 1000px;
+    }
+  }
+  &-wrapper {
+    transform: translateX(-20%);
+    > h3 {
+      font-size: 40px;
+      margin-bottom: 18px;
+    }
+  }
+}
+#description3 {
+  h3 > br:nth-child(1) {
+    display: none;
   }
 }
