@@ -86,3 +86,31 @@
     background-color: #ddac61;
   }
 }
+
+// --クローズ--
+#close,
+.close-container {
+  padding: 40px 0;
+  .close-text {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 800px) {
+  #close {
+    .close {
+      &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-text {
+        width: 30%;
+        text-align: left;
+      }
+      &-btns {
+        width: 30%;
+        margin: 0;
+      }
+    }
+  }
+}
