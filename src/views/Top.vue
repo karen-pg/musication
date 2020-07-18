@@ -95,6 +95,18 @@
         </div>
       </div>
     </section>
+    <section id="close">
+      <div class="close-container">
+        <div class="close-text">
+          <p></p>
+        </div>
+        <div class="close-btns">
+          <router-link to="/home" class="link-btn start-btn">始める</router-link>
+          <router-link to="/login" class="link-btn">ログイン</router-link>
+          <router-link to="/sign" class="link-btn">新規登録</router-link>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 <script>
