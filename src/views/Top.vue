@@ -111,6 +111,21 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="footer-link">
+        <i></i>
+        <i></i>
+        <i></i>
+      </div>
+      <div class="footer-contact">
+        <ul>
+          <li>プライバシーポリシー</li>
+          <li>利用規約</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+      <p class="footer-logo">&copy;MUSICATION</p>
+    </footer>
   </div>
 </template>
 <script>
