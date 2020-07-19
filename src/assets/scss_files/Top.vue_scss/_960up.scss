@@ -57,6 +57,7 @@
 // --ディスクリプション--
 #descriptions {
   padding: 200px 0 150px;
+  position: relative;
 }
 .description {
   margin-bottom: 100px;
@@ -70,14 +71,9 @@
   &-wrapper {
     transform: translateX(-20%);
     > h3 {
-      font-size: 40px;
+      font-size: 43px;
       margin-bottom: 18px;
     }
-  }
-}
-#description3 {
-  h3 > br:nth-child(1) {
-    display: none;
   }
 }
 

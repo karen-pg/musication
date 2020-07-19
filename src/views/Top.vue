@@ -91,7 +91,7 @@
           <div class="description-wrapper explanation">
             <h3>
               新しい
-              <br />仲間を <br />探す
+              <br />仲間と <br />繋がる
             </h3>
             <p class="strong">掲示板で仲間を探すことができます。</p>
             <p>
