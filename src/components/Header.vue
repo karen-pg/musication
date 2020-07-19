@@ -5,7 +5,7 @@
         <h1 id="header-logo">MUSICATION</h1>
       </router-link>
       <div>
-        <div id="humberger" @click="openMenu()" :class="{open: isOpen}">
+        <div id="humberger" @click="openMenu()" :class="{ open: isOpen }">
           <span></span>
           <span></span>
           <span></span>
@@ -15,7 +15,7 @@
         </div>
       </div>
     </header>
-    <div id="slide-header-menus" :class="{slide: isOpen}">
+    <div id="slide-header-menus" :class="{ slide: isOpen }">
       <slot name="slide-header-menus"></slot>
     </div>
   </div>
@@ -24,14 +24,14 @@
 export default {
   data() {
     return {
-      isOpen: false
+      isOpen: false,
     };
   },
   methods: {
     openMenu() {
       this.isOpen = !this.isOpen;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -46,6 +46,7 @@ header {
   z-index: 20;
 }
 #header-logo {
+  color: $font-color;
   font-size: 0.8em;
   margin: 0;
   @media screen and (min-width: 415px) {
@@ -99,6 +100,7 @@ header {
     display: none;
   }
   .slide-header-menu {
+    color: $font-color;
     flex-grow: 1;
     text-align: center;
     border-right: 1px solid gray;

@@ -14,7 +14,11 @@
         <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
       </template>
     </Header>
-    <h1>Sign.vue</h1>
+    <div class="form">
+      <div class="form-container">
+        <p class="heading">サインイン</p>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -28,5 +32,10 @@ export default {
 <style
   lang="scss"
   src="@/assets/scss_files/Top.vue_scss/style.scss"
+  scoped
+></style>
+<style
+  lang="scss"
+  src="@/assets/scss_files/Sign-Login.vue_scss/style.scss"
   scoped
 ></style>

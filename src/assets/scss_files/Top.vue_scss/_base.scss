@@ -2,6 +2,7 @@
 
 // --ヘッダー--
 #body {
+  color: $font-color;
   background: {
     image: url("../../imgs/hougaku_img-670x372.jpg");
     repeat: no-repeat;
@@ -20,6 +21,7 @@
 }
 .header-menu {
   display: none;
+  color: $font-color;
 }
 
 // --ヒーロー--
@@ -59,6 +61,7 @@
 }
 
 .link-btn {
+  color: $font-color;
   display: block;
   height: 40px;
   line-height: 40px;
