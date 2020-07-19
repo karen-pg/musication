@@ -8,15 +8,26 @@
       </template>
       <template v-slot:slide-header-menus>
         <router-link to="/home" class="slide-header-menu">始める</router-link>
-        <router-link to="/login" class="slide-header-menu"
-          >ログイン</router-link
-        >
+        <router-link to="/login" class="slide-header-menu">ログイン</router-link>
         <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
       </template>
     </Header>
-    <div class="form">
-      <div class="form-container">
+    <div class="main">
+      <div class="form">
         <p class="heading">ログイン</p>
+        <form action="#" class="form-container">
+          <div class="form-wrapper">
+            <label for="mail">メールアドレス</label>
+            <input type="mail" id="mail" />
+          </div>
+          <div class="form-wrapper">
+            <label for="password">パスワード</label>
+            <input type="password" id="password" />
+            <a href="#">パスワードを忘れた場合</a>
+          </div>
+          <input type="submit" value="ログイン" />
+        </form>
+        <router-link to="/sign">新しいアカウントを作成</router-link>
       </div>
     </div>
   </div>
@@ -25,8 +36,8 @@
 import Header from "../components/Header.vue";
 export default {
   components: {
-    Header,
-  },
+    Header
+  }
 };
 </script>
 <style
