@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Header>
+  <div id="body">
+    <Header class="header">
       <template v-slot:header-menus>
         <router-link to="/home" class="header-menu">始める</router-link>
         <router-link to="/login" class="header-menu">ログイン</router-link>
@@ -17,7 +17,7 @@
         <p class="heading">新規登録</p>
         <form action="#" mathod="#" class="form-container">
           <div class="form-wrapper">
-            <label for="name">お名前</label>
+            <label for="name">ユーザーネーム</label>
             <input type="text" id="name" name="name" />
           </div>
           <div class="form-wrapper">
@@ -25,16 +25,19 @@
             <input type="mail" id="mail" name="meil" />
           </div>
           <div class="form-wrapper">
-            <label for="password">パスワード</label>
+            <label for="password">パスワード ※8文字以上</label>
             <input type="password" id="password" name="password" />
           </div>
           <div class="form-wrapper">
             <label for="password-confirm">パスワード(確認)</label>
             <input type="password" id="password-confirm" name="password-confirm" />
           </div>
-          <input type="submit" value="新規登録" />
+          <div class="form-wrapper">
+            <input type="submit" value="登録" class="submit" />
+          </div>
         </form>
-        <router-link to="/login">すでにアカウントをお持ちの方はこちら</router-link>
+        <hr />
+        <router-link to="/login" class="form-link">すでにアカウントをお持ちの方はこちら</router-link>
       </div>
     </div>
   </div>

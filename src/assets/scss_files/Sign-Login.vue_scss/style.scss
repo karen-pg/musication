@@ -1,5 +1,79 @@
 @import "@/assets/scss_files/_import.scss";
 
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
 .main {
   color: $base-color;
+  padding: 100px 30px;
+  .form {
+    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    .heading {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    &-container,
+    hr {
+      margin-bottom: 30px;
+    }
+    &-wrapper {
+      margin-bottom: 15px;
+      input {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+      .submit {
+        border-radius: 50px;
+        background-color: rgba(220, 90, 100, 1);
+      }
+    }
+  }
+}
+.form-link {
+  font-size: 0.9em;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 415px) {
+  .main {
+    padding: 150px 30px;
+    .form {
+      max-width: 500px;
+      width: 90%;
+      padding: 30px;
+      .heading {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      &-container,
+      hr {
+        margin-bottom: 30px;
+      }
+      &-wrapper {
+        font-size: 20px;
+        margin-bottom: 15px;
+        input {
+          font-size: 20px;
+          padding: 8px;
+        }
+      }
+    }
+  }
+  .form-link {
+    font-size: 1em;
+  }
 }

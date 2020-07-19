@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <Header>
+  <div id="body">
+    <Header class="header">
       <template v-slot:header-menus>
         <router-link to="/home" class="header-menu">始める</router-link>
         <router-link to="/login" class="header-menu">ログイン</router-link>
@@ -23,11 +23,14 @@
           <div class="form-wrapper">
             <label for="password">パスワード</label>
             <input type="password" id="password" />
-            <a href="#">パスワードを忘れた場合</a>
           </div>
-          <input type="submit" value="ログイン" />
+          <div class="form-wrapper">
+            <input type="submit" value="ログイン" class="submit" />
+          </div>
         </form>
-        <router-link to="/sign">新しいアカウントを作成</router-link>
+        <hr />
+        <a href="#" class="form-link">パスワードを忘れた場合</a>
+        <router-link to="/sign" class="form-link">新しいアカウントを作成</router-link>
       </div>
     </div>
   </div>
