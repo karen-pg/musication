@@ -33,13 +33,16 @@
         <router-link to="/sign" class="form-link">新しいアカウントを作成</router-link>
       </div>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 <script>
 import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 export default {
   components: {
-    Header
+    Header,
+    Footer
   }
 };
 </script>

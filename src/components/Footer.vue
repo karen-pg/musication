@@ -18,6 +18,7 @@
   </footer>
 </template>
 <style lang="scss" scoped>
+@import "../assets/scss_files/_import.scss";
 footer {
   padding: 30px 50px;
   background-color: $base-color;

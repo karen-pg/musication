@@ -40,13 +40,16 @@
         <router-link to="/login" class="form-link">すでにアカウントをお持ちの方はこちら</router-link>
       </div>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 <script>
 import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 export default {
   components: {
-    Header
+    Header,
+    Footer
   }
 };
 </script>
