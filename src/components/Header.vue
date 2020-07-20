@@ -105,7 +105,7 @@ header {
     flex-grow: 1;
     text-align: center;
     border-right: 1px solid gray;
-    &:nth-child(3) {
+    &:last-child {
       border: none;
     }
   }
