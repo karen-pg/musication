@@ -8,9 +8,7 @@
       </template>
       <template v-slot:slide-header-menus>
         <router-link to="/home" class="slide-header-menu">始める</router-link>
-        <router-link to="/login" class="slide-header-menu"
-          >ログイン</router-link
-        >
+        <router-link to="/login" class="slide-header-menu">ログイン</router-link>
         <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
       </template>
     </Header>
@@ -54,7 +52,8 @@
           <div class="description-wrapper explanation">
             <h3>
               あなたの
-              <br />音楽を <br />世界へ
+              <br />音楽を
+              <br />世界へ
             </h3>
             <p class="strong">オリジナル楽曲を作成して世界に発信しましょう。</p>
             <p>あなたのアイディアで新しい音楽を生み出しましょう。</p>
@@ -71,12 +70,8 @@
               ジャンルは
               <br />無限大
             </h3>
-            <p class="strong">
-              ユーザーのアイディアが、新しいジャンルを生み出します。
-            </p>
-            <p>
-              ユーザーが作成した個性あふれる楽曲から、最高の音楽と出会いましょう。
-            </p>
+            <p class="strong">ユーザーのアイディアが、新しいジャンルを生み出します。</p>
+            <p>ユーザーが作成した個性あふれる楽曲から、最高の音楽と出会いましょう。</p>
           </div>
         </div>
       </div>
@@ -91,12 +86,11 @@
           <div class="description-wrapper explanation">
             <h3>
               新しい
-              <br />仲間と <br />繋がる
+              <br />仲間と
+              <br />繋がる
             </h3>
             <p class="strong">掲示板で仲間を探すことができます。</p>
-            <p>
-              同じ音楽が好きな仲間はもちろん、一緒に創作活動をする仲間も探すことができます。
-            </p>
+            <p>同じ音楽が好きな仲間はもちろん、一緒に創作活動をする仲間も探すことができます。</p>
           </div>
         </div>
       </div>
@@ -106,47 +100,28 @@
         <div class="close-text">
           <p>
             さあ
-            <br />音楽を探求する <br />旅に出よう
+            <br />音楽を探求する
+            <br />旅に出よう
           </p>
         </div>
         <div class="close-btns">
-          <router-link to="/home" class="link-btn start-btn"
-            >始める</router-link
-          >
-          <router-link to="/login" class="link-btn login-btn"
-            >ログイン</router-link
-          >
-          <router-link to="/sign" class="link-btn sign-btn"
-            >新規登録</router-link
-          >
+          <router-link to="/home" class="link-btn start-btn">始める</router-link>
+          <router-link to="/login" class="link-btn login-btn">ログイン</router-link>
+          <router-link to="/sign" class="link-btn sign-btn">新規登録</router-link>
         </div>
       </div>
     </section>
-    <footer>
-      <div class="footer-link">
-        <font-awesome-icon :icon="['fab', 'twitter']" class="fa-2x" />
-        <font-awesome-icon :icon="['fab', 'facebook']" class="fa-2x" />
-        <font-awesome-icon :icon="['fab', 'instagram']" class="fa-2x" />
-      </div>
-      <div class="footer-contact">
-        <ul>
-          <li>利用規約</li>
-          <span>｜</span>
-          <li>プライバシーポリシー</li>
-          <span>｜</span>
-          <li>お問い合わせ</li>
-        </ul>
-      </div>
-      <p class="footer-logo">&copy;MUSICATION</p>
-    </footer>
+    <Footer></Footer>
   </div>
 </template>
 <script>
 import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
 export default {
   components: {
     Header,
-  },
+    Footer
+  }
 };
 </script>
 <style
