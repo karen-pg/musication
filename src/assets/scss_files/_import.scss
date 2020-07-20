@@ -6,3 +6,23 @@ $sub-font-color: #dfdddd;
   text-decoration: none;
   margin: 0;
 }
+#Header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+.header-menu {
+  color: $font-color;
+  display: none;
+  @media screen and(min-width:414px) {
+    font-size: 0.9em;
+    margin-right: 20px;
+    display: inline-block;
+  }
+  @media screen and (min-width: 960px) {
+    margin-right: 40px;
+    font-size: 1.3em;
+  }
+}
