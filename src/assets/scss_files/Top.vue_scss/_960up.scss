@@ -6,7 +6,7 @@
 // --ヒーロー--
 #hero {
   &-container {
-    max-width: 700px;
+    max-width: 800px;
     &-title {
       margin-bottom: 45px;
       h1 {
@@ -73,6 +73,9 @@
     > h3 {
       font-size: 43px;
       margin-bottom: 18px;
+      @media screen and(min-width:1100px) {
+        font-size: 53px;
+      }
     }
   }
 }

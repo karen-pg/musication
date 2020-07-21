@@ -99,8 +99,7 @@
       <div class="close-container">
         <div class="close-text">
           <p>
-            さあ
-            <br />音楽を探求する
+            音楽を探求する
             <br />旅に出よう
           </p>
         </div>
