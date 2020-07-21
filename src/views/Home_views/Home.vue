@@ -3,7 +3,13 @@
     <Header>
       <template v-slot:header-menus>
         <router-link to="/login" class="header-menu">ログイン</router-link>
-        <router-link to="/sign" class="header-menu">新規登録</router-link>
+        <router-link to="/sign" class="mobile-header-menu header-menu">新規登録</router-link>
+        <router-link to="/mobilesearch" class="mobile-header-menu header-menu">
+          <font-awesome-icon icon="search" class="fa-2x" />
+        </router-link>
+        <router-link to="/board" class="header-menu">
+          <font-awesome-icon icon="newspaper" class="fa-2x" />
+        </router-link>
       </template>
       <template v-slot:slide-header-menus>
         <router-link to="/login" class="slide-header-menu">ログイン</router-link>
