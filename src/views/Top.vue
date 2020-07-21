@@ -1,6 +1,11 @@
 <template>
   <div id="body">
     <Header id="Header">
+      <template v-slot:header-logo>
+        <router-link to="/">
+          <h1 id="header-logo">MUSICATION</h1>
+        </router-link>
+      </template>
       <template v-slot:header-menus>
         <router-link to="/home" class="header-menu">始める</router-link>
         <router-link to="/login" class="header-menu">ログイン</router-link>

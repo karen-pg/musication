@@ -1,14 +1,19 @@
 <template>
   <div>
     <Header>
+      <template v-slot:header-logo>
+        <router-link to="/home">
+          <h1 id="header-logo">MUSICATION</h1>
+        </router-link>
+      </template>
       <template v-slot:header-menus>
         <router-link to="/login" class="header-menu">ログイン</router-link>
-        <router-link to="/sign" class="mobile-header-menu header-menu">新規登録</router-link>
-        <router-link to="/mobilesearch" class="mobile-header-menu header-menu">
-          <font-awesome-icon icon="search" class="fa-2x" />
+        <router-link to="/sign" class="header-menu">新規登録</router-link>
+        <router-link to="/mobilesearch" style="margin-right: 20px;">
+          <font-awesome-icon icon="search" class="header-menu mobile-header-menu" />
         </router-link>
-        <router-link to="/board" class="header-menu">
-          <font-awesome-icon icon="newspaper" class="fa-2x" />
+        <router-link to="/board">
+          <font-awesome-icon icon="newspaper" class="header-menu mobile-header-menu" />
         </router-link>
       </template>
       <template v-slot:slide-header-menus>
@@ -29,3 +34,5 @@ export default {
   }
 };
 </script>
+<style lang="scss" src="@/assets/scss_files/Home.vue_scss/style.scss">
+</style>

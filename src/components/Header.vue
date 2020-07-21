@@ -1,17 +1,15 @@
 <template>
   <div>
     <header>
-      <router-link to="/">
-        <h1 id="header-logo">MUSICATION</h1>
-      </router-link>
-      <div>
+      <slot name="header-logo"></slot>
+      <div class="header-wrapper">
+        <div id="header-menus">
+          <slot name="header-menus"></slot>
+        </div>
         <div id="humberger" @click="openMenu()" :class="{ open: isOpen }">
           <span></span>
           <span></span>
           <span></span>
-        </div>
-        <div id="header-menus">
-          <slot name="header-menus"></slot>
         </div>
       </div>
     </header>
@@ -45,18 +43,12 @@ header {
   position: relative;
   z-index: 20;
 }
-#header-logo {
-  color: $font-color;
-  font-size: 0.8em;
-  margin: 0;
-  @media screen and (min-width: 415px) {
-    font-size: 1.1em;
-  }
-  @media screen and (min-width: 960px) {
-    font-size: 1.5em;
+.header-wrapper {
+  display: flex;
+  #header-menus {
+    margin-right: 20px;
   }
 }
-
 #humberger {
   span {
     display: block;
