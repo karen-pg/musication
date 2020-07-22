@@ -1,17 +1,6 @@
 <template>
   <div id="body">
-    <Header class="header">
-      <template v-slot:header-menus>
-        <router-link to="/home" class="header-menu">始める</router-link>
-        <router-link to="/login" class="header-menu">ログイン</router-link>
-        <router-link to="/sign" class="header-menu">新規登録</router-link>
-      </template>
-      <template v-slot:slide-header-menus>
-        <router-link to="/home" class="slide-header-menu">始める</router-link>
-        <router-link to="/login" class="slide-header-menu">ログイン</router-link>
-        <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
-      </template>
-    </Header>
+    <TopHeader></TopHeader>
     <div class="main">
       <div class="form">
         <p class="heading">新規登録</p>
@@ -44,11 +33,11 @@
   </div>
 </template>
 <script>
-import Header from "../components/Header.vue";
+import TopHeader from "../components/TopHeader.vue";
 import Footer from "../components/Footer.vue";
 export default {
   components: {
-    Header,
+    TopHeader,
     Footer
   }
 };
