@@ -16,6 +16,7 @@
       </router-link>
     </template>
     <template v-slot:slide-header-menus>
+      <router-link to="/home" class="slide-header-menu">ホーム</router-link>
       <router-link to="/login" class="slide-header-menu">ログイン</router-link>
       <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
     </template>
@@ -29,4 +30,6 @@ export default {
   }
 };
 </script>
-
+<style lang="scss" scoped>
+@import "@/assets/scss_files/_header-opt.scss";
+</style>
