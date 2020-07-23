@@ -31,8 +31,9 @@
   }
   &.mobile-header-menu {
     display: inline-block;
-    @media screen and(min-width: 414px) {
-      display: none;
+    margin-right: 20px;
+    @media screen and(min-width: 415px) {
+      margin: 0;
     }
   }
 }
