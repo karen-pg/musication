@@ -22,14 +22,14 @@
 export default {
   data() {
     return {
-      isOpen: false
+      isOpen: false,
     };
   },
   methods: {
     openMenu() {
       this.isOpen = !this.isOpen;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -45,9 +45,6 @@ header {
 }
 .header-wrapper {
   display: flex;
-  #header-menus {
-    margin-right: 20px;
-  }
 }
 #humberger {
   span {
