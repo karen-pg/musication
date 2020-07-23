@@ -1,0 +1,32 @@
+@import "@/assets/scss_files/_import.scss";
+
+body {
+  background-color: $font-color;
+}
+.container {
+  padding: 20px;
+}
+.search {
+  border-bottom: 1px $sub-font-color;
+  margin-bottom: 20px;
+  &-text {
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.search {
+  &-switches {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.search-switch,
+hr {
+  color: $hr-color;
+}
+.active {
+  color: $base-color;
+}
