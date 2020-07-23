@@ -52,7 +52,7 @@
   }
 }
 .start-btn {
-  background-color: #de3c31;
+  background-color: $red;
 }
 
 .link-btn {
@@ -189,10 +189,10 @@
       margin: auto;
       text-align: center;
       .login-btn {
-        background-color: #9567c4;
+        background-color: $purple;
       }
       .sign-btn {
-        background-color: #ddac61;
+        background-color: $yerrow;
         margin-bottom: 0;
       }
     }

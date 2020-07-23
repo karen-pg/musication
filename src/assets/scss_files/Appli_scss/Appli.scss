@@ -4,10 +4,11 @@ body {
   background-color: $font-color;
 }
 .container {
-  padding: 20px;
+  padding: 20px 0;
+  overflow: hidden;
 }
 .search {
-  border-bottom: 1px $sub-font-color;
+  padding: 0 20px;
   margin-bottom: 20px;
   &-text {
     padding: 5px;
@@ -15,18 +16,33 @@ body {
     border-radius: 10px;
   }
 }
-.search {
-  &-switches {
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
+.search-switches {
+  position: relative;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  white-space: nowrap;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 100%;
+    top: 0;
+    right: -40px;
+  }
+  .search-switch {
+    color: $hr-color;
+    padding: 5px 12px;
+    margin-right: 5px;
+    border-radius: 20px;
+    &.active {
+      border: 2px solid $red;
+      color: $red;
+    }
   }
 }
-
-.search-switch,
 hr {
   color: $hr-color;
-}
-.active {
-  color: $base-color;
 }
