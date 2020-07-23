@@ -6,8 +6,7 @@ import Sign from "@/views/Sign.vue";
 import Appli from "@/views/Appli_views/Appli.vue";
 import Home from "@/views/Appli_views/Home.vue";
 import Board from "@/views/Appli_views/Board.vue";
-import New from "@/views/Appli_views/New.vue";
-import Popurality from "@/views/Appli_views/Popurality.vue";
+import Music from "@/views/Appli_views/Music.vue";
 import Genre from "@/views/Appli_views/Genre.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -30,8 +29,7 @@ const routes = [
     children: [
       { path: "home", component: Home, name: "Home" },
       { path: "board", component: Board, name: "Board" },
-      { path: "new", component: New, name: "New" },
-      { path: "popurality", component: Popurality, name: "Popurality" },
+      { path: "music", component: Music, name: "Music" },
       { path: "genre", component: Genre, name: "Genre" },
     ],
   },
