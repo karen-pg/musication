@@ -1,0 +1,48 @@
+@import "@/assets/scss_files/_import.scss";
+
+body {
+  background-color: white;
+}
+.container {
+  padding: 20px 0;
+  overflow: hidden;
+}
+.search {
+  padding: 0 20px;
+  margin-bottom: 20px;
+  &-text {
+    padding: 5px;
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.search-switches {
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+  white-space: nowrap;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 100%;
+    top: 0;
+    right: -40px;
+  }
+  .search-switch {
+    color: $hr-color;
+    padding: 5px 12px;
+    margin-right: 5px;
+    border-radius: 20px;
+    &.active {
+      border: 2px solid $red;
+      color: $red;
+    }
+  }
+}
+hr {
+  color: $hr-color;
+}
