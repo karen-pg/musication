@@ -1,18 +1,4 @@
-@import "../../import";
-
-section {
-  padding: 10px 20px;
-}
-.container {
-  padding: 20px 5px;
-  border-bottom: 1px solid $sub-font-color;
-  &:last-child {
-    border: none;
-  }
-  > h1 {
-    margin-bottom: 10px;
-  }
-}
+@import "../import";
 .music {
   display: flex;
   padding: 5px;

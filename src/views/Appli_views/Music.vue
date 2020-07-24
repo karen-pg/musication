@@ -235,5 +235,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/Appli_scss/Home.vue_scss/style.scss";
+@import "@/assets/scss_files/Appli_scss/Appli-child_scss/Home-Music_scss/style.scss";
 </style>
