@@ -15,11 +15,11 @@
             <div class="music__detail__sub detail-sub">
               <p class="music__detail__sub--views">
                 <font-awesome-icon icon="play" class="icon" />
-                {{recomMusic.views|toPunctuate}}
+                {{recomMusic.views|attachUnit}}
               </p>
               <p class="music__detail__sub--fav">
                 <font-awesome-icon icon="heart" class="icon" />
-                {{recomMusic.fav|toPunctuate}}
+                {{recomMusic.fav|attachUnit}}
               </p>
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
@@ -45,11 +45,11 @@
             <div class="music__detail__sub detail-sub detail-sub">
               <p class="music__detail__sub--views">
                 <font-awesome-icon icon="play" class="icon" />
-                {{pickupMusic.views|toPunctuate}}
+                {{pickupMusic.views|attachUnit}}
               </p>
               <p class="music__detail__sub--fav">
                 <font-awesome-icon icon="heart" class="icon" />
-                {{pickupMusic.fav|toPunctuate}}
+                {{pickupMusic.fav|attachUnit}}
               </p>
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
@@ -79,7 +79,7 @@
               </p>
               <p class="user__detail__sub--posts">
                 投稿数・
-                {{populralityUser.posts|toPunctuate}}
+                {{populralityUser.posts|attachUnit}}
               </p>
             </div>
           </div>
@@ -217,22 +217,23 @@ export default {
     };
   },
   filters: {
-    toPunctuate(val) {
-      return val.toLocaleString();
-    },
     attachUnit(val) {
       if (val >= 10000) {
         const str = String(val);
         const cutNum = str.slice(-str.length, -3);
-        const attach = `${cutNum.slice(0, -1)}.${cutNum.slice(-1)}万`;
-        return attach;
+        if (cutNum[length + 1] === "0") {
+          return `${cutNum.slice(0, -1)}万`;
+        } else {
+          return `${cutNum.slice(0, -1)}.${cutNum.slice(-1)}万`;
+        }
+        // return attach;
       } else {
-        return val;
+        return val.toLocaleString();
       }
     },
     toAbridge(val) {
-      if (val.length > 20) {
-        const abridge = `${val.slice(0, 19)}...`;
+      if (val.length > 15) {
+        const abridge = `${val.slice(0, 14)}...`;
         return abridge;
       } else {
         return val;
