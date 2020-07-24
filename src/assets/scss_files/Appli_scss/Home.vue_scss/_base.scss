@@ -11,15 +11,14 @@ section {
   }
   > h1 {
     margin-bottom: 10px;
-    font-size: 30px;
   }
 }
 .music {
   display: flex;
   padding: 5px;
   &__img {
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     margin-right: 20px;
     background-color: $yerrow;
     > img {
