@@ -10,16 +10,16 @@
           <div class="music__img">
             <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
           </div>
-          <div class="music__detail">
-            <p class="music__detail--title detail-title">{{recomMusic.title}}</p>
+          <div class="music__detail detail">
+            <p class="music__detail--title detail-title">{{recomMusic.title|toAbridge}}</p>
             <div class="music__detail__sub detail-sub">
               <p class="music__detail__sub--views">
                 <font-awesome-icon icon="play" class="icon" />
-                {{recomMusic.views}}
+                {{recomMusic.views|toPunctuate}}
               </p>
               <p class="music__detail__sub--fav">
                 <font-awesome-icon icon="heart" class="icon" />
-                {{recomMusic.fav}}
+                {{recomMusic.fav|toPunctuate}}
               </p>
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
@@ -40,16 +40,16 @@
           <div class="music__img">
             <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
           </div>
-          <div class="music__detail">
-            <p class="music__detail--title detail-title">{{pickupMusic.title}}</p>
+          <div class="music__detail detail">
+            <p class="music__detail--title detail-title">{{pickupMusic.title |toAbridge}}</p>
             <div class="music__detail__sub detail-sub detail-sub">
               <p class="music__detail__sub--views">
                 <font-awesome-icon icon="play" class="icon" />
-                {{pickupMusic.views}}
+                {{pickupMusic.views|toPunctuate}}
               </p>
               <p class="music__detail__sub--fav">
                 <font-awesome-icon icon="heart" class="icon" />
-                {{pickupMusic.fav}}
+                {{pickupMusic.fav|toPunctuate}}
               </p>
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
@@ -70,16 +70,16 @@
           <div class="user__img">
             <img src="@/assets/imgs/ifn0438.png" alt="ユーザーのサムネイル" />
           </div>
-          <div class="user__detail">
-            <p class="user__detail--name detail-title">{{populralityUser.name}}</p>
+          <div class="user__detail detail">
+            <p class="user__detail--name detail-title">{{populralityUser.name|toAbridge}}</p>
             <div class="usermusic__detail__sub detail-sub">
               <p class="usermusic__detail__sub--followers">
                 フォロワー・
-                {{populralityUser.followers}}
+                {{populralityUser.followers|attachUnit}}
               </p>
               <p class="user__detail__sub--posts">
                 投稿数・
-                {{populralityUser.posts}}
+                {{populralityUser.posts|toPunctuate}}
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default {
       recomMusics: [
         {
           id: 1,
-          title: "おすすめ1",
+          title: "おすすめおすすめおすすめおすすめおすすめ1",
           user: "ユーザー",
           views: 100000,
           fav: 3500,
@@ -145,7 +145,7 @@ export default {
         },
         {
           id: 2,
-          title: "ピックアップ",
+          title: "hogehogehogehogehogehoge",
           user: "ユーザー",
           views: 30000,
           fav: 3200,
@@ -179,13 +179,13 @@ export default {
       populralityUsers: [
         {
           id: 1,
-          name: "ユーザー1",
-          followers: 12000,
-          posts: 32,
+          name: "ユーザーユーザーユーザー1",
+          followers: 112000,
+          posts: 42,
         },
         {
           id: 2,
-          name: "ユーザー2",
+          name: "hogehogehogehogehogehogehoge2",
           followers: 10000,
           posts: 35,
         },
@@ -198,7 +198,7 @@ export default {
         {
           id: 4,
           name: "ユーザー4",
-          followers: 10000,
+          followers: 9000,
           posts: 12,
         },
         {
@@ -215,6 +215,29 @@ export default {
         },
       ],
     };
+  },
+  filters: {
+    toPunctuate(val) {
+      return val.toLocaleString();
+    },
+    attachUnit(val) {
+      if (val >= 10000) {
+        const str = String(val);
+        const cutNum = str.slice(-str.length, -3);
+        const attach = `${cutNum.slice(0, -1)}.${cutNum.slice(-1)}万`;
+        return attach;
+      } else {
+        return val;
+      }
+    },
+    toAbridge(val) {
+      if (val.length > 20) {
+        const abridge = `${val.slice(0, 19)}...`;
+        return abridge;
+      } else {
+        return val;
+      }
+    },
   },
 };
 </script>
