@@ -13,18 +13,20 @@
           <div class="music__detail detail">
             <p class="music__detail--title detail-title">{{recomMusic.title|toAbridge}}</p>
             <div class="music__detail__sub detail-sub">
-              <p class="music__detail__sub--views">
-                <font-awesome-icon icon="play" class="icon" />
-                {{recomMusic.views|attachUnit}}
-              </p>
-              <p class="music__detail__sub--fav">
-                <font-awesome-icon icon="heart" class="icon" />
-                {{recomMusic.fav|attachUnit}}
-              </p>
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
                 {{recomMusic.genre}}
               </p>
+              <div class="music__detail__sub--num">
+                <p class="music__detail__sub--num--views">
+                  <font-awesome-icon icon="play" class="icon" />
+                  {{recomMusic.views|attachUnit}}
+                </p>
+                <p class="music__detail__sub--num-fav">
+                  <font-awesome-icon icon="heart" class="icon" />
+                  {{recomMusic.fav|attachUnit}}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -43,18 +45,20 @@
           <div class="music__detail detail">
             <p class="music__detail--title detail-title">{{pickupMusic.title |toAbridge}}</p>
             <div class="music__detail__sub detail-sub detail-sub">
-              <p class="music__detail__sub--views">
-                <font-awesome-icon icon="play" class="icon" />
-                {{pickupMusic.views|attachUnit}}
-              </p>
-              <p class="music__detail__sub--fav">
-                <font-awesome-icon icon="heart" class="icon" />
-                {{pickupMusic.fav|attachUnit}}
-              </p>
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
                 {{pickupMusic.genre}}
               </p>
+              <div class="music__detail__sub--num">
+                <p class="music__detail__sub--num--views">
+                  <font-awesome-icon icon="play" class="icon" />
+                  {{pickupMusic.views|attachUnit}}
+                </p>
+                <p class="music__detail__sub--num--fav">
+                  <font-awesome-icon icon="heart" class="icon" />
+                  {{pickupMusic.fav|attachUnit}}
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -16,9 +16,10 @@ section {
 }
 .music {
   display: flex;
-  padding: 10px;
+  padding: 5px;
   &__img {
-    width: 100px;
+    width: 90px;
+    height: 90px;
     margin-right: 20px;
     background-color: $yerrow;
     > img {
@@ -29,13 +30,21 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 60%;
+    max-width: 55%;
+    &__sub {
+      &--num {
+        display: flex;
+        &--views {
+          margin-right: 8px;
+        }
+      }
+    }
   }
 }
 .detail {
   word-wrap: break-word;
   &-title {
-    font-size: 18px;
+    font-size: 15px;
   }
   &-sub {
     color: gray;
@@ -43,7 +52,7 @@ section {
   }
 }
 .icon {
-  margin: 0 5px;
+  margin: 0 3px;
   color: $sub-font-color;
 }
 
