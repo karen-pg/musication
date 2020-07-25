@@ -1,3 +1,4 @@
+@import "../../../import";
 @import "../import";
 .music {
   display: flex;
@@ -35,10 +36,6 @@
     color: gray;
     font-size: 12px;
   }
-}
-.icon {
-  margin: 0 3px;
-  color: $sub-font-color;
 }
 
 .users-wrapper {
