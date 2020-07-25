@@ -4,13 +4,14 @@ body {
   background-color: white;
 }
 .container {
-  padding: 20px 0;
+  padding: 10px 0;
   overflow: hidden;
 }
 .search {
   padding: 0 20px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   &-text {
+    font-size: 1.1em;
     padding: 5px;
     width: 100%;
     border-radius: 10px;
@@ -34,7 +35,7 @@ body {
   }
   .search-switch {
     color: $hr-color;
-    padding: 5px 12px;
+    padding: 8px 12px;
     margin-right: 5px;
     border-radius: 20px;
     &.active {
