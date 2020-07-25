@@ -11,7 +11,7 @@
             <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
           </div>
           <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{recomMusic.title|toAbridge}}</p>
+            <p class="music__detail--title detail-title">{{recomMusic.title|toAbridge(15)}}</p>
             <div class="music__detail__sub detail-sub">
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
@@ -43,7 +43,7 @@
             <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
           </div>
           <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{pickupMusic.title |toAbridge}}</p>
+            <p class="music__detail--title detail-title">{{pickupMusic.title |toAbridge(15)}}</p>
             <div class="music__detail__sub detail-sub detail-sub">
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
@@ -75,7 +75,7 @@
             <img src="@/assets/imgs/ifn0438.png" alt="ユーザーのサムネイル" />
           </div>
           <div class="user__detail detail">
-            <p class="user__detail--name detail-title">{{populralityUser.name|toAbridge}}</p>
+            <p class="user__detail--name detail-title">{{populralityUser.name|toAbridge(15)}}</p>
             <div class="usermusic__detail__sub detail-sub">
               <p class="usermusic__detail__sub--followers">
                 フォロワー・

@@ -13,9 +13,9 @@ export const appliMixin = {
         return val.toLocaleString();
       }
     },
-    toAbridge(val) {
-      if (val.length > 15) {
-        const abridge = `${val.slice(0, 14)}...`;
+    toAbridge(val, lim) {
+      if (val.length > lim) {
+        const abridge = val.slice(0, lim - 1) + "...";
         return abridge;
       } else {
         return val;

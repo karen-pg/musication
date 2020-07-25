@@ -11,7 +11,7 @@
             <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
           </div>
           <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{popMusic.title|toAbridge}}</p>
+            <p class="music__detail--title detail-title">{{popMusic.title|toAbridge(15)}}</p>
             <div class="music__detail__sub detail-sub">
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
@@ -43,7 +43,7 @@
             <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
           </div>
           <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{soaringMusic.title |toAbridge}}</p>
+            <p class="music__detail--title detail-title">{{soaringMusic.title |toAbridge(15)}}</p>
             <div class="music__detail__sub detail-sub detail-sub">
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
@@ -75,7 +75,7 @@
             <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
           </div>
           <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{newMusic.title|toAbridge}}</p>
+            <p class="music__detail--title detail-title">{{newMusic.title|toAbridge(15)}}</p>
             <div class="music__detail__sub detail-sub">
               <p class="music__detail__sub--genre">
                 <font-awesome-icon icon="music" class="icon" />
