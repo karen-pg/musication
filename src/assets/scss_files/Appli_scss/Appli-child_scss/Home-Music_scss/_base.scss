@@ -1,8 +1,20 @@
 @import "../../../import";
 @import "../import";
+.container {
+  overflow: hidden;
+}
+.musics-wrapper {
+  position: relative;  
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow-x: scroll;  
+}
 .music {
   display: flex;
   padding: 5px;
+  width: 95%;
   &__img {
     width: 80px;
     height: 80px;
@@ -16,7 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    max-width: 55%;
+    flex: 1;
     &__sub {
       &--num {
         display: flex;
