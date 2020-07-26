@@ -93,7 +93,7 @@
           </p>
         </div>
         <div class="close-btns">
-          <router-link to="/home" class="link-btn start-btn">始める</router-link>
+          <router-link :to="{name: 'Home'}" class="link-btn start-btn">始める</router-link>
           <router-link to="/login" class="link-btn login-btn">ログイン</router-link>
           <router-link to="/sign" class="link-btn sign-btn">新規登録</router-link>
         </div>
