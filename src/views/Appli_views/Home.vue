@@ -1,5 +1,13 @@
 <template>
   <section>
+    <Attention>
+      <template v-slot:attention-detail>
+        <p>
+          バルセロナ発祥のダンスミュージック
+          <br />「マキナ」がジャンルに登場
+        </p>
+      </template>
+    </Attention>
     <div class="container">
       <h1>
         おすすめ楽曲
@@ -93,8 +101,12 @@
   </section>
 </template>
 <script>
+import Attention from "../../components/Attention";
 import { appliMixin } from "@/appliMixin";
 export default {
+  components: {
+    Attention,
+  },
   data() {
     return {
       recomMusics: [

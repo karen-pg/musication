@@ -4,10 +4,7 @@
       <img src="@/assets/imgs/3438372_m.jpg" alt="ニュージャンルのイメージ画像" />
     </div>
     <div class="attention__detail">
-      <p>
-        バルセロナ発祥のダンスミュージック
-        <br />「マキナ」を体感しよう
-      </p>
+      <slot name="attention-detail"></slot>
     </div>
   </div>
 </template>

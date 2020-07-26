@@ -1,6 +1,13 @@
 <template>
   <section>
-    <Attention></Attention>
+    <Attention>
+      <template v-slot:attention-detail>
+        <p>
+          バルセロナ発祥のダンスミュージック
+          <br />「マキナ」を体感しよう
+        </p>
+      </template>
+    </Attention>
     <div class="container">
       <p>
         ジャンル一覧
