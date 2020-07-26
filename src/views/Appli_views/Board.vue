@@ -37,7 +37,6 @@
                 {{post.goods|attachUnit}}
               </p>
             </div>
-            <div class="post__footer--icons-food"></div>
           </div>
         </div>
       </div>
