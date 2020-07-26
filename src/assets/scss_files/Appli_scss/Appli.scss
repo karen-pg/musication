@@ -5,19 +5,8 @@ body {
 }
 .container {
   padding: 10px 0;
-  overflow: hidden;
 }
-.search {
-  padding: 0 20px;
-  margin-bottom: 15px;
-  &-text {
-    font-size: 1.1em;
-    padding: 5px;
-    width: 100%;
-    border-radius: 10px;
-  }
-}
-.search-switches {
+.change {
   position: relative;
   padding: 0 20px;
   display: flex;
@@ -33,7 +22,7 @@ body {
     top: 0;
     right: -40px;
   }
-  .search-switch {
+  &-switch {
     color: $hr-color;
     padding: 8px 12px;
     margin-right: 5px;

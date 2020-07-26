@@ -12,6 +12,12 @@
       </div>
     </div>
     <div class="container">
+      <p>
+        ジャンル一覧
+        <font-awesome-icon icon="chevron-right" class="icon" />
+      </p>
+    </div>
+    <div class="container">
       <h1>
         人気のジャンル
         <font-awesome-icon icon="chevron-right" class="icon" />
@@ -52,7 +58,10 @@
           </div>
         </div>
         <div class="pickup__detail">
-          <p>音声合成技術を用いたデスクトップミュージック</p>
+          <p>
+            音声合成技術を用いた
+            <br />デスクトップミュージック
+          </p>
         </div>
       </div>
     </div>
