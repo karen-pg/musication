@@ -2,6 +2,7 @@
 <body>
   <AppliHeader></AppliHeader>
   <nav class="container">
+    <SearchBar class="search-bar"></SearchBar>
     <div class="change">
       <router-link :to="{name:'Home'}" class="change-switch" active-class="active">トップ</router-link>
       <router-link :to="{name:'Music'}" class="change-switch" active-class="active">楽曲</router-link>
@@ -15,9 +16,11 @@
 </template>
 <script>
 import AppliHeader from "../../components/AppliHeader";
+import SearchBar from "../../components/SearchBar";
 export default {
   components: {
     AppliHeader,
+    SearchBar,
   },
 };
 </script>

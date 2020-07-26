@@ -42,7 +42,7 @@
     </div>
     <div class="container">
       <h1>
-        ピックアップ
+        {{today}}のピックアップ
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
       <div class="musics-wrapper">
@@ -107,6 +107,7 @@ export default {
   components: {
     Attention,
   },
+  mixins: [appliMixin],
   data() {
     return {
       recomMusics: [
@@ -233,7 +234,14 @@ export default {
       ],
     };
   },
-  mixins: [appliMixin],
+  computed: {
+    today() {
+      const d = new Date();
+      const month = d.getMonth() + 1;
+      const date = d.getDate();
+      return `${month}/${date}`;
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
