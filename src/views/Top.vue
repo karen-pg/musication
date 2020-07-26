@@ -14,7 +14,7 @@
           </p>
         </div>
         <hr />
-        <router-link to="/home" class="start-btn link-btn">始める</router-link>
+        <router-link :to="{name:'Home'}" class="start-btn link-btn">始める</router-link>
       </div>
     </section>
     <section id="intro">
@@ -108,8 +108,8 @@ import Footer from "@/components/Footer.vue";
 export default {
   components: {
     TopHeader,
-    Footer
-  }
+    Footer,
+  },
 };
 </script>
 <style

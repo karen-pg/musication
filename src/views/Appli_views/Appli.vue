@@ -1,6 +1,6 @@
 <template>
 <body>
-  <AppliHeader></AppliHeader>
+  <AppliHeader class="header"></AppliHeader>
   <nav class="container">
     <SearchBar class="search-bar"></SearchBar>
     <div class="change">

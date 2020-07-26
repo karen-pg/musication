@@ -8,12 +8,12 @@
     <template v-slot:header-menus>
       <router-link to="/login" class="header-menu">ログイン</router-link>
       <router-link to="/sign" class="header-menu">新規登録</router-link>
-      <router-link to="/mobilesearch">
+      <router-link :to="{name: 'MobileSearch'}">
         <font-awesome-icon icon="search" class="header-menu mobile-header-menu" />
       </router-link>
     </template>
     <template v-slot:slide-header-menus>
-      <router-link to="/home" class="slide-header-menu">ホーム</router-link>
+      <router-link :to="{name:'Home'}" class="slide-header-menu">トップ</router-link>
       <router-link to="/login" class="slide-header-menu">ログイン</router-link>
       <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
     </template>
