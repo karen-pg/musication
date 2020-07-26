@@ -12,65 +12,15 @@
       <h1>
         おすすめ楽曲
         <font-awesome-icon icon="chevron-right" class="icon" />
-      </h1>
-      <div class="musics-wrapper">
-        <div v-for="recomMusic in recomMusics" :key="recomMusic.id" class="music">
-          <div class="music__img">
-            <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
-          </div>
-          <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{recomMusic.title|toAbridge(15)}}</p>
-            <div class="music__detail__sub detail-sub">
-              <p class="music__detail__sub--genre">
-                <font-awesome-icon icon="music" class="icon" />
-                {{recomMusic.genre}}
-              </p>
-              <div class="music__detail__sub--num">
-                <p class="music__detail__sub--num--views">
-                  <font-awesome-icon icon="play" class="icon" />
-                  {{recomMusic.views|attachUnit}}
-                </p>
-                <p class="music__detail__sub--num-fav">
-                  <font-awesome-icon icon="heart" class="icon" />
-                  {{recomMusic.fav|attachUnit}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </h1>      
+    <MusicsWrapper :array="recomMusics"></MusicsWrapper>
     </div>
     <div class="container">
       <h1>
         {{today}}のピックアップ
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <div class="musics-wrapper">
-        <div v-for="pickupMusic in PickupMusics" :key="pickupMusic.id" class="music">
-          <div class="music__img">
-            <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
-          </div>
-          <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{pickupMusic.title |toAbridge(15)}}</p>
-            <div class="music__detail__sub detail-sub detail-sub">
-              <p class="music__detail__sub--genre">
-                <font-awesome-icon icon="music" class="icon" />
-                {{pickupMusic.genre}}
-              </p>
-              <div class="music__detail__sub--num">
-                <p class="music__detail__sub--num--views">
-                  <font-awesome-icon icon="play" class="icon" />
-                  {{pickupMusic.views|attachUnit}}
-                </p>
-                <p class="music__detail__sub--num--fav">
-                  <font-awesome-icon icon="heart" class="icon" />
-                  {{pickupMusic.fav|attachUnit}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MusicsWrapper :array="PickupMusics"></MusicsWrapper>
     </div>
     <div class="container">
       <h1>
@@ -102,10 +52,12 @@
 </template>
 <script>
 import Attention from "../../components/Attention";
+import MusicsWrapper from '../../components/MusicsWrapper';
 import { appliMixin } from "@/appliMixin";
 export default {
   components: {
     Attention,
+    MusicsWrapper
   },
   mixins: [appliMixin],
   data() {

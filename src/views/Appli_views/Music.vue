@@ -5,102 +5,31 @@
         人気
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <div class="musics-wrapper">
-        <div v-for="popMusic in popMusics" :key="popMusic.id" class="music">
-          <div class="music__img">
-            <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
-          </div>
-          <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{popMusic.title|toAbridge(15)}}</p>
-            <div class="music__detail__sub detail-sub">
-              <p class="music__detail__sub--genre">
-                <font-awesome-icon icon="music" class="icon" />
-                {{popMusic.genre}}
-              </p>
-              <div class="music__detail__sub--num">
-                <p class="music__detail__sub--num--views">
-                  <font-awesome-icon icon="play" class="icon" />
-                  {{popMusic.views|attachUnit}}
-                </p>
-                <p class="music__detail__sub--num-fav">
-                  <font-awesome-icon icon="heart" class="icon" />
-                  {{popMusic.fav|attachUnit}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MusicsWrapper :array="popMusics"></MusicsWrapper>
     </div>
     <div class="container">
       <h1>
         急上昇
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <div class="musics-wrapper">
-        <div v-for="soaringMusic in soaringMusics" :key="soaringMusic.id" class="music">
-          <div class="music__img">
-            <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
-          </div>
-          <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{soaringMusic.title |toAbridge(15)}}</p>
-            <div class="music__detail__sub detail-sub detail-sub">
-              <p class="music__detail__sub--genre">
-                <font-awesome-icon icon="music" class="icon" />
-                {{soaringMusic.genre}}
-              </p>
-              <div class="music__detail__sub--num">
-                <p class="music__detail__sub--num--views">
-                  <font-awesome-icon icon="play" class="icon" />
-                  {{soaringMusic.views|attachUnit}}
-                </p>
-                <p class="music__detail__sub--num--fav">
-                  <font-awesome-icon icon="heart" class="icon" />
-                  {{soaringMusic.fav|attachUnit}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MusicsWrapper :array="soaringMusics"></MusicsWrapper>
     </div>
     <div class="container">
       <h1>
         新着
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <div class="musics-wrapper">
-        <div v-for="newMusic in newMusics" :key="newMusic.id" class="music">
-          <div class="music__img">
-            <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
-          </div>
-          <div class="music__detail detail">
-            <p class="music__detail--title detail-title">{{newMusic.title|toAbridge(15)}}</p>
-            <div class="music__detail__sub detail-sub">
-              <p class="music__detail__sub--genre">
-                <font-awesome-icon icon="music" class="icon" />
-                {{newMusic.genre}}
-              </p>
-              <div class="music__detail__sub--num">
-                <p class="music__detail__sub--num--views">
-                  <font-awesome-icon icon="play" class="icon" />
-                  {{newMusic.views|attachUnit}}
-                </p>
-                <p class="music__detail__sub--num-fav">
-                  <font-awesome-icon icon="heart" class="icon" />
-                  {{newMusic.fav|attachUnit}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <MusicsWrapper :array="newMusics"></MusicsWrapper>
     </div>
   </section>
 </template>
 <script>
+import MusicsWrapper from '@/components/MusicsWrapper.vue';
 import { appliMixin } from "@/appliMixin";
 export default {
+  components:{
+    MusicsWrapper
+  },
   data() {
     return {
       popMusics: [
@@ -355,5 +284,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/Appli_scss/Appli-child_scss/Home-Music_scss/style.scss";
+@import '@/assets/scss_files/Appli_scss/Appli-child_scss/_import.scss'
 </style>
