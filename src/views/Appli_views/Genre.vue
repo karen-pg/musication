@@ -1,16 +1,6 @@
 <template>
   <section>
-    <div class="attention">
-      <div class="attention__img">
-        <img src="@/assets/imgs/3438372_m.jpg" alt="ニュージャンルのイメージ画像" />
-      </div>
-      <div class="attention__detail">
-        <p>
-          バルセロナ発祥のダンスミュージック
-          <br />「マキナ」を体感しよう
-        </p>
-      </div>
-    </div>
+    <Attention></Attention>
     <div class="container">
       <p>
         ジャンル一覧
@@ -85,7 +75,11 @@
 @import "@/assets/scss_files/Appli_scss/Appli-child_scss/Genre_scss/style.scss";
 </style>
 <script>
+import Attention from "../../components/Attention";
 export default {
+  components: {
+    Attention,
+  },
   data() {
     return {
       popGenres: [
