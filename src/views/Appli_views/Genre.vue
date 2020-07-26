@@ -3,7 +3,7 @@
     <Attention>
       <template v-slot:attention-detail>
         <p>
-          バルセロナ発祥のダンスミュージック
+          90年代初頭に誕生したダンスミュージック
           <br />「マキナ」を体感しよう
         </p>
       </template>

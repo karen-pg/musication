@@ -1,14 +1,19 @@
 <template>
-  <div>
-    <AppliHeader></AppliHeader>
-    <h1>検索</h1>
-  </div>
+  <section>
+    <div class="container">
+      <SearchBar></SearchBar>
+    </div>
+  </section>
 </template>
 <script>
-import AppliHeader from "../../components/AppliHeader.vue";
+import SearchBar from "../../components/SearchBar.vue";
 export default {
   components: {
-    AppliHeader
-  }
+    SearchBar,
+  },
 };
 </script>
+<style lang="scss" scoped>
+@import "@/assets/scss_files/_import.scss";
+@import "@/assets/scss_files/Appli_scss/Appli-child_scss/_import.scss";
+</style>
