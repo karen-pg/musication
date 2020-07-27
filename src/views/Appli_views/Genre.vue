@@ -19,28 +19,22 @@
         人気のジャンル
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <div class="genre-wrapper">
+      <!-- <div class="genre-wrapper">
         <div v-for="popGenre in popGenres" :key="popGenre.name" class="genre">
           <div class="genre__img">
             <img src="@/assets/imgs/370354_s.jpg" alt="ジャンルごとの人気楽曲のサムネイル" />
           </div>
           <p class="genre__name">{{popGenre.name}}</p>
         </div>
-      </div>
+      </div> -->
+<GenreWrapper :array="popGenres"></GenreWrapper>
     </div>
     <div class="container">
       <h1>
         急上昇ジャンル
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <div class="genre-wrapper">
-        <div v-for="soaringGenre in soaringGenres" :key="soaringGenre.name" class="genre">
-          <div class="genre__img">
-            <img src="@/assets/imgs/370354_s.jpg" alt="ジャンルごとの人気楽曲のサムネイル" />
-          </div>
-          <p class="genre__name">{{soaringGenre.name}}</p>
-        </div>
-      </div>
+      <GenreWrapper :array="soaringGenres"></GenreWrapper>
     </div>
     <div class="container">
       <h1>
@@ -67,14 +61,7 @@
         マイナージャンル
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <div class="genre-wrapper">
-        <div v-for="minerGenre in minerGenres" :key="minerGenre.name" class="genre">
-          <div class="genre__img">
-            <img src="@/assets/imgs/370354_s.jpg" alt="ジャンルごとの人気楽曲のサムネイル" />
-          </div>
-          <p class="genre__name">{{minerGenre.name}}</p>
-        </div>
-      </div>
+      <GenreWrapper :array="minerGenres"></GenreWrapper>
     </div>
   </section>
 </template>
@@ -82,10 +69,12 @@
 @import "@/assets/scss_files/Appli_scss/Appli-child_scss/Genre_scss/style.scss";
 </style>
 <script>
+import GenreWrapper from "../../components/GenreWrapper";
 import Attention from "../../components/Attention";
 export default {
   components: {
     Attention,
+    GenreWrapper
   },
   data() {
     return {
