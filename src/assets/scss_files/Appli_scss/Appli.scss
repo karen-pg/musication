@@ -3,22 +3,32 @@
 body {
   background-color: white;
   padding-top: 55px;
+  max-width: 1300px;
 }
 .container {
   padding: 10px 20px;
+  @media screen and (min-width: 960px){    
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .header {
   position: fixed;
   top: 0;
   left: 0;
+  flex: 1;
   width: 100%;
   z-index: 10;
 }
 .search-bar {
   display: none;
   @media screen and(min-width:960px) {
-    display: block;
-    margin-bottom: 10px;
+    display: block;    
+    width: 350px;
+    height: 30px;
   }
 }
 .change {
@@ -28,6 +38,18 @@ body {
   align-items: center;
   overflow-x: scroll;
   white-space: nowrap;
+  @media screen and (min-width:345px){
+    overflow: hidden;
+  }
+  @media screen and (min-width:415px){        
+    margin: auto;
+    justify-content: center;
+    max-width: 550px;
+  }
+  @media screen and (min-width:960px){
+    width:60%;
+    margin: 0;
+  }
   &::after {
     position: absolute;
     content: "";
@@ -35,12 +57,20 @@ body {
     height: 100%;
     top: 0;
     right: -40px;
+  @media screen and (min-width:345px){
+    display: none;
+  }
   }
   &-switch {
     color: $hr-color;
-    padding: 8px 12px;
+    padding: 6px 12px;
     margin-right: 5px;
     border-radius: 20px;
+    @media screen and (min-width: 415px){
+      font-size: 15px;
+      text-align: center;
+      flex: 1;      
+    }
     &.active {
       border: 2px solid $red;
       color: $red;
