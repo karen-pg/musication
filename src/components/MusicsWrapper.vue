@@ -41,16 +41,17 @@ export default {
 }
 .musics-wrapper {
   position: relative;
-  height: 380px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   overflow-x: scroll;
   @media screen and (min-width: 550px) {
-    height: 280px;
+    height: 300px;
   }
   @media screen and (min-width: 800px) {
-    height: 380px;
+    height: 370px;
+    overflow-x: hidden;
   }
 }
 .music {
