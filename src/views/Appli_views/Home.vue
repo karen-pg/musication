@@ -32,10 +32,10 @@
           <div class="user__img">
             <img src="@/assets/imgs/ifn0438.png" alt="ユーザーのサムネイル" />
           </div>
-          <div class="user__detail detail">
-            <p class="user__detail--name detail-title">{{populralityUser.name|toAbridge(15)}}</p>
-            <div class="usermusic__detail__sub detail-sub">
-              <p class="usermusic__detail__sub--followers">
+          <div class="user__detail">
+            <p class="user__detail--name">{{populralityUser.name|toAbridge(15)}}</p>
+            <div class="user__detail__sub">
+              <p class="user__detail__sub--followers">
                 フォロワー・
                 {{populralityUser.followers|attachUnit}}
               </p>
@@ -309,5 +309,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/Appli_scss/Appli-child_scss/Home-Music_scss/style.scss";
+@import "@/assets/scss_files/Appli_scss/Appli-child_scss/Home_scss/style.scss";
 </style>
