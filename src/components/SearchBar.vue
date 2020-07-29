@@ -7,6 +7,6 @@
   font-size: 13px;
   padding: 2px;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: 1px solid darkgray;
 }
 </style>

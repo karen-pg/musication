@@ -1,6 +1,7 @@
 <template>
 <body>
   <AppliHeader class="header"></AppliHeader>
+  <div class="main">
   <nav class="container">
     <SearchBar class="search-bar"></SearchBar>
     <div class="change">
@@ -9,9 +10,9 @@
       <router-link :to="{name:'Genre'}" class="change-switch" active-class="active">ジャンル</router-link>
       <router-link :to="{name:'Board'}" class="change-switch" active-class="active">掲示板</router-link>
     </div>
-  </nav>
-  <hr />
+  </nav>  
   <router-view></router-view>
+  </div>
 </body>
 </template>
 <script>
