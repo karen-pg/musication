@@ -16,6 +16,9 @@
     position: relative;
     width: 100%;
     height: 170px;
+    @media screen and (min-width: 960px) {
+      height: 220px;
+    }
     &::before {
       position: absolute;
       content: "New Genre";

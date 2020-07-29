@@ -13,9 +13,6 @@
   @media screen and (min-width: 415px) {
     font-size: 1.1em;
   }
-  @media screen and (min-width: 960px) {
-    font-size: 1.2em;
-  }
 }
 .header-menu {
   color: $font-color;
@@ -27,7 +24,6 @@
   }
   @media screen and (min-width: 960px) {
     margin-right: 40px;
-    font-size: 1.1em;
   }
   &.mobile-header-menu {
     display: inline-block;
