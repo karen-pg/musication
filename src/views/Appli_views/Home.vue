@@ -12,8 +12,8 @@
       <h1>
         おすすめ楽曲
         <font-awesome-icon icon="chevron-right" class="icon" />
-      </h1>      
-    <MusicsWrapper :array="recomMusics"></MusicsWrapper>
+      </h1>
+      <MusicsWrapper :array="recomMusics"></MusicsWrapper>
     </div>
     <div class="container">
       <h1>
@@ -52,12 +52,12 @@
 </template>
 <script>
 import Attention from "../../components/Attention";
-import MusicsWrapper from '../../components/MusicsWrapper';
+import MusicsWrapper from "../../components/MusicsWrapper";
 import { appliMixin } from "@/appliMixin";
 export default {
   components: {
     Attention,
-    MusicsWrapper
+    MusicsWrapper,
   },
   mixins: [appliMixin],
   data() {
@@ -143,6 +143,22 @@ export default {
           fav: 800,
           genre: "ジャンル",
         },
+        {
+          id: 11,
+          title: "おすすめ11",
+          user: "ユーザー",
+          views: 48000,
+          fav: 1300,
+          genre: "ジャンル",
+        },
+        {
+          id: 12,
+          title: "おすすめ12",
+          user: "ユーザー",
+          views: 23000,
+          fav: 800,
+          genre: "ジャンル",
+        },
       ],
       PickupMusics: [
         {
@@ -203,7 +219,7 @@ export default {
         },
         {
           id: 8,
-          title: "ピックアップ3",
+          title: "ピックアップ8",
           user: "ユーザー",
           views: 10000,
           fav: 830,
@@ -211,7 +227,7 @@ export default {
         },
         {
           id: 9,
-          title: "ピックアップ4",
+          title: "ピックアップ9",
           user: "ユーザー",
           views: 50000,
           fav: 790,
@@ -219,12 +235,28 @@ export default {
         },
         {
           id: 10,
-          title: "ピックアップ5",
+          title: "ピックアップ10",
           user: "ユーザー",
           views: 37000,
           fav: 1100,
           genre: "ジャンル",
-        },        
+        },
+        {
+          id: 11,
+          title: "ピックアップ11",
+          user: "ユーザー",
+          views: 50000,
+          fav: 790,
+          genre: "ジャンル",
+        },
+        {
+          id: 12,
+          title: "ピックアップ12",
+          user: "ユーザー",
+          views: 37000,
+          fav: 1100,
+          genre: "ジャンル",
+        },
       ],
       populralityUsers: [
         {

@@ -24,11 +24,11 @@
   </section>
 </template>
 <script>
-import MusicsWrapper from '@/components/MusicsWrapper.vue';
+import MusicsWrapper from "@/components/MusicsWrapper.vue";
 import { appliMixin } from "@/appliMixin";
 export default {
-  components:{
-    MusicsWrapper
+  components: {
+    MusicsWrapper,
   },
   data() {
     return {
@@ -108,6 +108,22 @@ export default {
         {
           id: 10,
           title: "人気の楽曲10",
+          user: "ユーザー",
+          views: 23000,
+          fav: 800,
+          genre: "ジャンル",
+        },
+        {
+          id: 11,
+          title: "人気の楽曲11",
+          user: "ユーザー",
+          views: 48000,
+          fav: 1300,
+          genre: "ジャンル",
+        },
+        {
+          id: 12,
+          title: "人気の楽曲12",
           user: "ユーザー",
           views: 23000,
           fav: 800,
@@ -195,6 +211,22 @@ export default {
           fav: 1100,
           genre: "ジャンル",
         },
+        {
+          id: 11,
+          title: "急上昇の楽曲11",
+          user: "ユーザー",
+          views: 50000,
+          fav: 790,
+          genre: "ジャンル",
+        },
+        {
+          id: 12,
+          title: "急上昇の楽曲12",
+          user: "ユーザー",
+          views: 37000,
+          fav: 1100,
+          genre: "ジャンル",
+        },
       ],
       newMusics: [
         {
@@ -277,6 +309,22 @@ export default {
           fav: 130,
           genre: "ジャンル",
         },
+        {
+          id: 11,
+          title: "新着の楽曲9",
+          user: "ユーザー",
+          views: 8000,
+          fav: 200,
+          genre: "ジャンル",
+        },
+        {
+          id: 12,
+          title: "新着の楽曲10",
+          user: "ユーザー",
+          views: 9000,
+          fav: 130,
+          genre: "ジャンル",
+        },
       ],
     };
   },
@@ -284,5 +332,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '@/assets/scss_files/Appli_scss/Appli-child_scss/_import.scss'
+@import "@/assets/scss_files/Appli_scss/Appli-child_scss/_import.scss";
+section {
+  width: 100%;
+}
 </style>
