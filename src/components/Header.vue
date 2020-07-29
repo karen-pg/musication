@@ -36,7 +36,7 @@ export default {
 @import "@/assets/scss_files/_import.scss";
 header {
   background-color: $base-color;
-  padding: 15px 30px;
+  padding: 10px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
