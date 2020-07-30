@@ -8,7 +8,7 @@ import Home from "@/views/Appli_views/Home.vue";
 import Board from "@/views/Appli_views/Board.vue";
 import Music from "@/views/Appli_views/Music.vue";
 import Genre from "@/views/Appli_views/Genre.vue";
-import MobileSearch from "@/views/Appli_views/MobileSearch.vue";
+import Search from "@/views/Appli_views/Search.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -32,7 +32,7 @@ const routes = [
       { path: "board", component: Board, name: "Board" },
       { path: "music", component: Music, name: "Music" },
       { path: "genre", component: Genre, name: "Genre" },
-      { path: "mobilesearch", component: MobileSearch, name: "MobileSearch" },
+      { path: "search", component: Search, name: "Search" },
     ],
   },
   { path: "*", redirect: "/Top" },

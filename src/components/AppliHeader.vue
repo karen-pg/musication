@@ -8,7 +8,7 @@
     <template v-slot:header-menus>
       <router-link to="/login" class="header-menu">ログイン</router-link>
       <router-link to="/sign" class="header-menu">新規登録</router-link>
-      <router-link :to="{name: 'MobileSearch'}">
+      <router-link :to="{name: 'Search'}">
         <font-awesome-icon icon="search" class="header-menu mobile-header-menu" />
       </router-link>
     </template>
