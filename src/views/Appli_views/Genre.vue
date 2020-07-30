@@ -19,15 +19,7 @@
         人気のジャンル
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <!-- <div class="genre-wrapper">
-        <div v-for="popGenre in popGenres" :key="popGenre.name" class="genre">
-          <div class="genre__img">
-            <img src="@/assets/imgs/370354_s.jpg" alt="ジャンルごとの人気楽曲のサムネイル" />
-          </div>
-          <p class="genre__name">{{popGenre.name}}</p>
-        </div>
-      </div> -->
-<GenreWrapper :array="popGenres"></GenreWrapper>
+      <GenreWrapper :array="popGenres"></GenreWrapper>
     </div>
     <div class="container">
       <h1>
@@ -74,7 +66,7 @@ import Attention from "../../components/Attention";
 export default {
   components: {
     Attention,
-    GenreWrapper
+    GenreWrapper,
   },
   data() {
     return {
@@ -98,7 +90,6 @@ export default {
         { name: "マイナージャンル1" },
         { name: "マイナージャンル2" },
         { name: "マイナージャンル3" },
-        { name: "マイナージャンル4" },
       ],
     };
   },

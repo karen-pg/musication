@@ -1,17 +1,17 @@
 <template>
-<div class="genre-wrapper">
-        <div v-for="val in array" :key="val.name" class="genre">
-          <div class="genre__img">
-            <img src="@/assets/imgs/370354_s.jpg" alt="ジャンルごとの人気楽曲のサムネイル" />
-          </div>
-          <p class="genre__name">{{val.name}}</p>
-        </div>
+  <div class="genre-wrapper">
+    <div v-for="val in array" :key="val.name" class="genre">
+      <div class="genre__img">
+        <img src="@/assets/imgs/370354_s.jpg" alt="ジャンルごとの人気楽曲のサムネイル" />
       </div>
+      <p class="genre__name">{{val.name}}</p>
+    </div>
+  </div>
 </template>
 <script>
-export default{
-  props:['array']
-}
+export default {
+  props: ["array"],
+};
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss_files/Appli_scss/Appli-child_scss/_import.scss";
@@ -25,6 +25,9 @@ export default{
   position: relative;
   width: 50%;
   padding: 5px;
+  @media screen and (min-width: 550px) {
+    width: calc(100% / 3);
+  }
   &__img {
     width: 100%;
     height: 90px;
