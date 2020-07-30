@@ -59,7 +59,7 @@ export default {
   padding: 5px;
   width: 95%;
   @media screen and (min-width: 550px) {
-    width: 50%;
+    width: 48%;
   }
   @media screen and (min-width: 800px) {
     width: calc(100% / 3);

@@ -12,7 +12,32 @@
         急上昇
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <MusicsWrapper :array="soaringMusics"></MusicsWrapper>
+      <div class="musics">
+        <div v-for="soaringMusic in soaringMusics" :key="soaringMusic.id" class="music">
+          <div class="music__img">
+            <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="上昇楽曲" />
+          </div>
+          <div class="music__detail">
+            <div class="music__detail--title">
+              <p>{{soaringMusic.title|toAbridge}}</p>
+            </div>
+            <div class="music__detail--sub">
+              <p>
+                <font-awesome-icon icon="music" class="icon" />
+                {{soaringMusic.genre}}
+              </p>
+              <p>
+                <font-awesome-icon icon="play" class="icon" />
+                {{soaringMusic.views|attachUnit}}
+              </p>
+              <p>
+                <font-awesome-icon icon="heart" class="icon" />
+                {{soaringMusic.fav|attachUnit}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container">
       <h1>
@@ -179,54 +204,54 @@ export default {
           fav: 1200,
           genre: "ジャンル",
         },
-        {
-          id: 7,
-          title: "急上昇の楽曲7",
-          user: "ユーザー",
-          views: 30000,
-          fav: 3200,
-          genre: "ジャンル",
-        },
-        {
-          id: 8,
-          title: "急上昇の楽曲8",
-          user: "ユーザー",
-          views: 10000,
-          fav: 830,
-          genre: "ジャンル",
-        },
-        {
-          id: 9,
-          title: "急上昇の楽曲9",
-          user: "ユーザー",
-          views: 50000,
-          fav: 790,
-          genre: "ジャンル",
-        },
-        {
-          id: 10,
-          title: "急上昇の楽曲10",
-          user: "ユーザー",
-          views: 37000,
-          fav: 1100,
-          genre: "ジャンル",
-        },
-        {
-          id: 11,
-          title: "急上昇の楽曲11",
-          user: "ユーザー",
-          views: 50000,
-          fav: 790,
-          genre: "ジャンル",
-        },
-        {
-          id: 12,
-          title: "急上昇の楽曲12",
-          user: "ユーザー",
-          views: 37000,
-          fav: 1100,
-          genre: "ジャンル",
-        },
+        // {
+        //   id: 7,
+        //   title: "急上昇の楽曲7",
+        //   user: "ユーザー",
+        //   views: 30000,
+        //   fav: 3200,
+        //   genre: "ジャンル",
+        // },
+        // {
+        //   id: 8,
+        //   title: "急上昇の楽曲8",
+        //   user: "ユーザー",
+        //   views: 10000,
+        //   fav: 830,
+        //   genre: "ジャンル",
+        // },
+        // {
+        //   id: 9,
+        //   title: "急上昇の楽曲9",
+        //   user: "ユーザー",
+        //   views: 50000,
+        //   fav: 790,
+        //   genre: "ジャンル",
+        // },
+        // {
+        //   id: 10,
+        //   title: "急上昇の楽曲10",
+        //   user: "ユーザー",
+        //   views: 37000,
+        //   fav: 1100,
+        //   genre: "ジャンル",
+        // },
+        // {
+        //   id: 11,
+        //   title: "急上昇の楽曲11",
+        //   user: "ユーザー",
+        //   views: 50000,
+        //   fav: 790,
+        //   genre: "ジャンル",
+        // },
+        // {
+        //   id: 12,
+        //   title: "急上昇の楽曲12",
+        //   user: "ユーザー",
+        //   views: 37000,
+        //   fav: 1100,
+        //   genre: "ジャンル",
+        // },
       ],
       newMusics: [
         {
@@ -333,6 +358,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/assets/scss_files/Appli_scss/Appli-child_scss/_import.scss";
+@import "@/assets/scss_files/Appli_scss/Appli-child_scss/Music_scss/style.scss";
 section {
   width: 100%;
 }
