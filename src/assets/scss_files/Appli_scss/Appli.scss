@@ -1,8 +1,7 @@
 @import "@/assets/scss_files/_import.scss";
 
 body {
-  background-color: white;
-  padding-top: 45px;
+  padding-top: 40px;
   max-width: 1300px;
 }
 .header {
@@ -18,16 +17,18 @@ body {
   }
 }
 .container {
-  padding: 10px 20px;
+  padding: 0 20px;
+  background-color: $font-color;
   @media screen and (min-width: 960px) {
+    position: sticky;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
-    min-width: 200px;
-    height: calc(100vh - 65px);
-    position: sticky;
-    top: 60px;
+    min-width: 180px;
+    height: calc(100vh - 45px);
+    top: 45px;
     left: 0;
+    padding: 20px;
   }
 }
 
@@ -36,11 +37,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  overflow-x: scroll;
   white-space: nowrap;
-  @media screen and (min-width: 345px) {
-    overflow: hidden;
-  }
   @media screen and (min-width: 415px) {
     max-width: 550px;
     margin: auto;
@@ -50,39 +47,43 @@ body {
     margin: 0;
     flex-direction: column;
   }
-  &::after {
-    position: absolute;
-    content: "";
-    width: 40px;
-    height: 100%;
-    top: 0;
-    right: -40px;
-    @media screen and (min-width: 345px) {
-      display: none;
-    }
-  }
   &-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
     color: $hr-color;
-    padding: 6px 12px;
-    margin-right: 5px;
-    border-radius: 20px;
+    font-size: 10px;
+    padding: 5px;
     @media screen and (min-width: 415px) {
-      font-size: 15px;
-      text-align: center;
-      flex: 1;
+      font-size: 12px;
     }
     @media screen and (min-width: 960px) {
+      flex-direction: row;
       width: 90%;
+      margin-bottom: 5px;
+      font-size: 15px;
     }
-    &.active {
-      color: $red;
-      border: 2px solid $red;
+  }
+  &-icon {
+    font-size: 22px;
+    margin-bottom: 3px;
+    @media screen and (min-width: 415px) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: 960px) {
+      margin: 0 5px;
+      font-size: 15px;
     }
   }
   .search {
     display: none;
     @media screen and (min-width: 960px) {
-      display: block;
+      display: flex;
     }
   }
+}
+.active {
+  color: $red;
+  border-bottom: 2px solid $red;
 }
