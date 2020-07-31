@@ -11,7 +11,6 @@
             <p class="post__header--detail-date">{{post.date}}</p>
           </div>
         </div>
-        <hr />
         <div class="post__main">
           <div class="post__main--title">
             <p>{{post.title}}</p>
@@ -22,9 +21,8 @@
               <li>タグ</li>
             </ul>
           </div>
-          <div class="post__main--text">{{post.text|toAbridge(40)}}</div>
+          <div class="post__main--text">{{post.text|toAbridge(60)}}</div>
         </div>
-        <hr />
         <div class="post__footer">
           <div class="post__footer--icons">
             <p>
