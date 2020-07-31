@@ -10,17 +10,45 @@
     </Attention>
     <div class="container">
       <h1>
-        おすすめ楽曲
+        {{today}}のおすすめ楽曲
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
       <MusicsWrapper :array="recomMusics"></MusicsWrapper>
     </div>
     <div class="container">
       <h1>
-        {{today}}のピックアップ
+        トピックス
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
-      <MusicsWrapper :array="PickupMusics"></MusicsWrapper>
+      <div class="topics">
+        <div class="topic">
+          <Topic class="topic-content">
+            <template v-slot:title>休憩のお供</template>
+            <template v-slot:detail>
+              ゆっくりと
+              <br />くつろぎたい時に
+            </template>
+          </Topic>
+        </div>
+        <div class="topic">
+          <Topic class="topic-content">
+            <template v-slot:title>全部「声」</template>
+            <template v-slot:detail>
+              一番身近な楽器
+              <br />「声」だけの楽曲
+            </template>
+          </Topic>
+        </div>
+        <div class="topic">
+          <Topic class="topic-content">
+            <template v-slot:title>民族楽器</template>
+            <template v-slot:detail>
+              音楽で
+              <br />世界旅行をしよう
+            </template>
+          </Topic>
+        </div>
+      </div>
     </div>
     <div class="container">
       <h1>
@@ -53,11 +81,13 @@
 <script>
 import Attention from "../../components/Attention";
 import MusicsWrapper from "../../components/MusicsWrapper";
+import Topic from "../../components/Topic";
 import { appliMixin } from "@/appliMixin";
 export default {
   components: {
     Attention,
     MusicsWrapper,
+    Topic,
   },
   mixins: [appliMixin],
   data() {
@@ -157,104 +187,6 @@ export default {
           user: "ユーザー",
           views: 23000,
           fav: 800,
-          genre: "ジャンル",
-        },
-      ],
-      PickupMusics: [
-        {
-          id: 1,
-          title: "ピックアップ1",
-          user: "ユーザー",
-          views: 60000,
-          fav: 1200,
-          genre: "ジャンル",
-        },
-        {
-          id: 2,
-          title: "hogehogehogehogehogehoge",
-          user: "ユーザー",
-          views: 30000,
-          fav: 3200,
-          genre: "ジャンル",
-        },
-        {
-          id: 3,
-          title: "ピックアップ3",
-          user: "ユーザー",
-          views: 10000,
-          fav: 830,
-          genre: "ジャンル",
-        },
-        {
-          id: 4,
-          title: "ピックアップ4",
-          user: "ユーザー",
-          views: 50000,
-          fav: 790,
-          genre: "ジャンル",
-        },
-        {
-          id: 5,
-          title: "ピックアップ5",
-          user: "ユーザー",
-          views: 37000,
-          fav: 1100,
-          genre: "ジャンル",
-        },
-        {
-          id: 6,
-          title: "ピックアップ6",
-          user: "ユーザー",
-          views: 60000,
-          fav: 1200,
-          genre: "ジャンル",
-        },
-        {
-          id: 7,
-          title: "hogehogehogehogehogehoge",
-          user: "ユーザー",
-          views: 30000,
-          fav: 3200,
-          genre: "ジャンル",
-        },
-        {
-          id: 8,
-          title: "ピックアップ8",
-          user: "ユーザー",
-          views: 10000,
-          fav: 830,
-          genre: "ジャンル",
-        },
-        {
-          id: 9,
-          title: "ピックアップ9",
-          user: "ユーザー",
-          views: 50000,
-          fav: 790,
-          genre: "ジャンル",
-        },
-        {
-          id: 10,
-          title: "ピックアップ10",
-          user: "ユーザー",
-          views: 37000,
-          fav: 1100,
-          genre: "ジャンル",
-        },
-        {
-          id: 11,
-          title: "ピックアップ11",
-          user: "ユーザー",
-          views: 50000,
-          fav: 790,
-          genre: "ジャンル",
-        },
-        {
-          id: 12,
-          title: "ピックアップ12",
-          user: "ユーザー",
-          views: 37000,
-          fav: 1100,
           genre: "ジャンル",
         },
       ],

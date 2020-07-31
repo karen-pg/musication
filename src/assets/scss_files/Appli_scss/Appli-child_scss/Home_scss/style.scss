@@ -41,3 +41,21 @@
     }
   }
 }
+.topics {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  @media screen and (min-width: 550px) {
+    overflow: hidden;
+  }
+  .topic {
+    min-width: 90%;
+    padding: 10px;
+    @media screen and (min-width: 550px) {
+      min-width: 30%;
+    }
+    &-content {
+      width: 100%;
+    }
+  }
+}
