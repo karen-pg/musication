@@ -9,9 +9,10 @@
     </div>
     <div class="container">
       <h1>
-        急上昇
+        週間ランキング
         <font-awesome-icon icon="chevron-right" class="icon" />
       </h1>
+      <p>{{week}}</p>
       <div class="musics">
         <div v-for="soaringMusic in soaringMusics" :key="soaringMusic.id" class="music">
           <div class="music__img">
@@ -352,6 +353,25 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    week() {
+      const d = new Date();
+      const year = d.getFullYear();
+      const month = d.getMonth();
+      const date = d.getDate();
+      const day_num = d.getDay();
+      const sunday = date - day_num;
+      const saturday = sunday + 6;
+      const day = ["日", "月", "火", "水", "木", "金", "土"];
+      let start = new Date(year, month, sunday);
+      start = `${start.getMonth() + 1}/${start.getDate()}(${
+        day[start.getDay()]
+      })`;
+      let end = new Date(year, month, saturday);
+      end = `${end.getMonth() + 1}/${end.getDate()}(${day[end.getDay()]})`;
+      return `${start} ～ ${end}`;
+    },
   },
   mixins: [appliMixin],
 };

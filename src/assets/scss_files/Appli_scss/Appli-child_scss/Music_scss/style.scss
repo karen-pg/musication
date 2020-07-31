@@ -1,7 +1,9 @@
 @import "../import";
 @import "../../../import";
 
+$background: #d9c968, silver, #98651a, #959596, #959596, #959596;
 .musics {
+  margin-top: 20px;
   display: flex;
   overflow-x: scroll;
   flex-wrap: nowrap;
@@ -9,10 +11,29 @@
     flex-wrap: wrap;
     overflow: hidden;
   }
-
   .music {
+    position: relative;
     min-width: 45%;
     padding: 5px;
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        &::after {
+          position: absolute;
+          content: "#{$i}";
+          display: block;
+          top: 0;
+          left: 0;
+          width: 40px;
+          height: 40px;
+          background-color: #{nth($background, $i)};
+          border-radius: 50%;
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+          text-align: center;
+          line-height: 40px;
+          color: $font-color;
+        }
+      }
+    }
     @media screen and (min-width: 550px) {
       min-width: 30%;
     }
