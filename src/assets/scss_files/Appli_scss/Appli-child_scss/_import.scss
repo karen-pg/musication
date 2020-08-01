@@ -1,13 +1,48 @@
 @import "../../import";
 
 .container {
-  padding: 20px;
+  padding: 20px 0;
   border-bottom: 1px solid $sub-font-color;
   &:last-child {
     border: none;
   }
   > h1 {
-    margin-bottom: 10px;
+    margin: {
+      bottom: 10px;
+      left: 20px;
+    }
+  }
+  > p {
+    margin-left: 20px;
+  }
+}
+
+// スクロールする大枠
+@mixin scroll-container($width) {
+  padding: 0 20px;
+  overflow-x: scroll;
+  @media screen and (min-width: $width) {
+    overflow: hidden;
+  }
+}
+
+/* スクロールする要素のlastchildの疑似要素で
+大枠のpadding-rigthの代行 */
+@mixin last($width) {
+  &:last-child {
+    position: relative;
+    ::after {
+      position: absolute;
+      content: "";
+      display: block;
+      top: 0;
+      left: 100%;
+      width: 20px;
+      height: 100%;
+      @media screen and (min-width: $width) {
+        display: none;
+      }
+    }
   }
 }
 

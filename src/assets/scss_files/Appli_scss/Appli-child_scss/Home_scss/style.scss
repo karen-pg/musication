@@ -41,16 +41,15 @@
     }
   }
 }
+
 .topics {
+  @include scroll-container(550px);
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
-  @media screen and (min-width: 550px) {
-    overflow: hidden;
-  }
   .topic {
     min-width: 90%;
     padding: 10px;
+    @include last(550px);
     @media screen and (min-width: 550px) {
       min-width: 30%;
     }

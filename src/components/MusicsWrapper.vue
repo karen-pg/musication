@@ -36,28 +36,26 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/scss_files/Appli_scss/Appli-child_scss/_import.scss";
 @import "@/assets/scss_files/_import.scss";
-.container {
-  overflow: hidden;
-}
+
 .musics-wrapper {
-  position: relative;
-  height: 400px;
+  @include scroll-container(800px);
+  height: 390px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  overflow-x: scroll;
+  width: auto;
   @media screen and (min-width: 550px) {
     height: 300px;
   }
   @media screen and (min-width: 800px) {
     height: 370px;
-    overflow-x: hidden;
   }
 }
 .music {
   display: flex;
   padding: 5px;
   width: 95%;
+  @include last(800px);
   @media screen and (min-width: 550px) {
     width: 48%;
   }
