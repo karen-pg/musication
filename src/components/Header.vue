@@ -35,12 +35,13 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/scss_files/_import.scss";
 header {
-  background-color: $base-color;
-  padding: 10px 30px;
+  position: relative;
   display: flex;
   justify-content: space-between;
+  height: 45px;
+  padding: 10px 30px;
+  background-color: $base-color;
   align-items: center;
-  position: relative;
   z-index: 20;
 }
 .header-wrapper {
