@@ -23,6 +23,7 @@ footer {
   padding: 30px 50px;
   background-color: $base-color;
   text-align: center;
+  color: $font-color;
   .footer {
     &-link {
       width: 200px;

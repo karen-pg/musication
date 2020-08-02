@@ -12,12 +12,14 @@
 @import "@/assets/scss_files/_import.scss";
 .attention {
   border-bottom: 5px solid $sub-font-color;
+  text-align: center;
   &__img {
     position: relative;
     width: 100%;
     height: 170px;
-    @media screen and (min-width: 960px) {
-      height: 220px;
+    background-color: black;
+    @media screen and (min-width: 415px) {
+      height: 250px;
     }
     &::before {
       position: absolute;
@@ -30,6 +32,10 @@
       color: $sub-font-color;
       opacity: 0.9;
       z-index: 5;
+      @media screen and (min-width: 415px) {
+        font-size: 25px;
+        top: 50px;
+      }
     }
     &::after {
       position: absolute;
@@ -45,11 +51,15 @@
       border-bottom: 3px solid $font-color;
       line-height: 0.9em;
       z-index: 5;
+      @media screen and (min-width: 415px) {
+        font-size: 60px;
+      }
     }
     > img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      max-width: 700px;
     }
   }
   &__detail {

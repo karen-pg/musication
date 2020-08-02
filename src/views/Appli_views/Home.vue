@@ -92,18 +92,21 @@
         </div>
       </div>
     </div>
+    <Footer></Footer>
   </section>
 </template>
 <script>
 import Attention from "../../components/Attention";
 import MusicsWrapper from "../../components/MusicsWrapper";
 import Topic from "../../components/Topic";
+import Footer from "../../components/Footer";
 import { appliMixin } from "@/appliMixin";
 export default {
   components: {
     Attention,
     MusicsWrapper,
     Topic,
+    Footer,
   },
   mixins: [appliMixin],
   data() {
