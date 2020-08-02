@@ -76,6 +76,22 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <p>
+        お知らせ
+        <font-awesome-icon icon="chevron-right" class="icon" />
+      </p>
+      <div class="info">
+        <div v-for="info in infomations" :key="info.id" class="info__item">
+          <div class="info__item--date">
+            <p>{{info.date}}</p>
+          </div>
+          <div class="info__item--title">
+            <p>{{info.title}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 <script>
@@ -227,6 +243,11 @@ export default {
           followers: 23000,
           posts: 38,
         },
+      ],
+      infomations: [
+        { id: 1, title: "タイトル１", date: "2020/08/02" },
+        { id: 2, title: "タイトル2", date: "2020/07/23" },
+        { id: 3, title: "タイトル3", date: "2020/07/015" },
       ],
     };
   },

@@ -1,13 +1,31 @@
 @import "../../../import";
 @import "../import";
 
+.topics {
+  @include scroll-container(580px);
+  display: flex;
+  flex-wrap: nowrap;
+  .topic {
+    min-width: 85%;
+    padding: 10px;
+    @include last(580px);
+    @media screen and (min-width: 580px) {
+      min-width: 30%;
+    }
+    &-content {
+      width: 100%;
+    }
+  }
+}
+
 .users-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0 20px;
 }
 .user {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
   margin-bottom: 5px;
   width: 50%;
@@ -20,7 +38,7 @@
   &__img {
     width: 80px;
     height: 80px;
-    margin: auto;
+    margin: 0 auto 5px;
     background-color: $yerrow;
     border-radius: 50%;
     overflow: hidden;
@@ -32,29 +50,38 @@
   }
   &__detail {
     word-break: break-word;
-    &--name {
-      font-size: 15px;
-    }
     &__sub {
-      color: gray;
+      color: $hr-color;
       font-size: 12px;
     }
   }
 }
 
-.topics {
-  @include scroll-container(550px);
-  display: flex;
-  flex-wrap: nowrap;
-  .topic {
-    min-width: 90%;
-    padding: 10px;
-    @include last(550px);
-    @media screen and (min-width: 550px) {
-      min-width: 30%;
+.container > p {
+  margin-bottom: 10px;
+}
+.info {
+  padding: 0 20px;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-bottom: 1px dotted $hr-color;
+    @media screen and (min-width: 415px) {
+      flex-direction: row;
+      align-items: center;
+      padding: 8px;
     }
-    &-content {
-      width: 100%;
+    &--date {
+      @extend .user__detail__sub;
+      margin-bottom: 5px;
+      flex: 1;
+      @media screen and (min-width: 415px) {
+        margin: 0;
+      }
+    }
+    &--title {
+      flex: 7;
     }
   }
 }

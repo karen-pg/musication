@@ -25,21 +25,21 @@
 .pickup {
   text-align: center;
   background-color: $font-color;
-  padding: 20px;
-  width: 200px;
+  padding: 15px;
+  max-width: 350px;
   margin: auto;
   &__title {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   &__imgs {
     width: 70%;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
     &--img {
       width: 50%;
       > img {
@@ -53,7 +53,7 @@
     }
   }
   &__detail {
-    font-size: 12px;
+    font-size: 15px;
     color: $hr-color;
   }
 }
