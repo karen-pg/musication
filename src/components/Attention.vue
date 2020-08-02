@@ -29,6 +29,7 @@
       left: 50%;
       transform: translateX(-50%);
       font-size: 22px;
+      font-family: Georgia, "Times New Roman", Times, serif;
       color: $sub-font-color;
       opacity: 0.9;
       z-index: 5;
@@ -47,9 +48,10 @@
       margin: 5px;
       letter-spacing: 0.1em;
       font-size: 47px;
+      font-family: Georgia, "Times New Roman", Times, serif;
       color: $font-color;
-      border-bottom: 3px solid $font-color;
-      line-height: 0.9em;
+      border-bottom: 2px solid $font-color;
+      line-height: 1em;
       z-index: 5;
       @media screen and (min-width: 415px) {
         font-size: 60px;
