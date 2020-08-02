@@ -1,5 +1,9 @@
 @import "@/assets/scss_files/_import.scss";
 
+.body {
+  background: linear-gradient(Peru, $yerrow 70%);
+  color: $font-color;
+}
 .header {
   position: fixed;
   width: 100%;
@@ -7,37 +11,37 @@
 }
 
 .main {
-  color: $base-color;
-  padding: 100px 30px;
-  min-height: 100vh;
+  padding: 80px 30px;
+  min-height: calc(100vh - 100px);
   .form {
-    background-color: rgba(255, 255, 255, 0.9);
     max-width: 400px;
     width: 90%;
     padding: 20px;
     margin: auto;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     .heading {
       text-align: center;
       font-size: 25px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
-    &-container,
-    hr {
+    &-container {
       margin-bottom: 30px;
     }
     &-wrapper {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       input {
         width: 100%;
         padding: 5px;
         margin-bottom: 10px;
-        border-radius: 5px;
+        font-size: 15px;
+        background-color: rgba(225, 225, 225, 0.2);
+        border: none {
+          radius: 5px;
+        }
       }
       .submit {
-        border-radius: 50px;
         background-color: rgba(220, 90, 100, 1);
+        color: $font-color;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
       }
     }
   }
@@ -51,7 +55,6 @@
 
 @media screen and (min-width: 415px) {
   .main {
-    padding: 150px 30px;
     .form {
       max-width: 500px;
       width: 90%;
@@ -60,15 +63,14 @@
         font-size: 30px;
         margin-bottom: 20px;
       }
-      &-container,
-      hr {
+      &-container {
         margin-bottom: 30px;
       }
       &-wrapper {
         font-size: 20px;
         margin-bottom: 15px;
         input {
-          font-size: 20px;
+          font-size: 18px;
           padding: 8px;
         }
       }
