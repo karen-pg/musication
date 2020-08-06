@@ -35,7 +35,7 @@ const routes = [
       { path: "search", component: Search, name: "Search" },
     ],
   },
-  { path: "*", redirect: "/Top" },
+  { path: "*", redirect: "/top" },
 ];
 
 const router = new VueRouter({
