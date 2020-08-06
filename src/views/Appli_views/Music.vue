@@ -205,54 +205,6 @@ export default {
           fav: 1200,
           genre: "ジャンル",
         },
-        // {
-        //   id: 7,
-        //   title: "急上昇の楽曲7",
-        //   user: "ユーザー",
-        //   views: 30000,
-        //   fav: 3200,
-        //   genre: "ジャンル",
-        // },
-        // {
-        //   id: 8,
-        //   title: "急上昇の楽曲8",
-        //   user: "ユーザー",
-        //   views: 10000,
-        //   fav: 830,
-        //   genre: "ジャンル",
-        // },
-        // {
-        //   id: 9,
-        //   title: "急上昇の楽曲9",
-        //   user: "ユーザー",
-        //   views: 50000,
-        //   fav: 790,
-        //   genre: "ジャンル",
-        // },
-        // {
-        //   id: 10,
-        //   title: "急上昇の楽曲10",
-        //   user: "ユーザー",
-        //   views: 37000,
-        //   fav: 1100,
-        //   genre: "ジャンル",
-        // },
-        // {
-        //   id: 11,
-        //   title: "急上昇の楽曲11",
-        //   user: "ユーザー",
-        //   views: 50000,
-        //   fav: 790,
-        //   genre: "ジャンル",
-        // },
-        // {
-        //   id: 12,
-        //   title: "急上昇の楽曲12",
-        //   user: "ユーザー",
-        //   views: 37000,
-        //   fav: 1100,
-        //   genre: "ジャンル",
-        // },
       ],
       newMusics: [
         {
@@ -360,8 +312,8 @@ export default {
       const year = d.getFullYear();
       const month = d.getMonth();
       const date = d.getDate();
-      const day_num = d.getDay();
-      const sunday = date - day_num;
+      const dayNum = d.getDay();
+      const sunday = date - dayNum;
       const saturday = sunday + 6;
       const day = ["日", "月", "火", "水", "木", "金", "土"];
       let start = new Date(year, month, sunday);
