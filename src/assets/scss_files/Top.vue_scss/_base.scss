@@ -3,13 +3,6 @@
 // --ヘッダー--
 #body {
   color: $font-color;
-  background: {
-    image: url("../../imgs/hougaku_img-670x372.jpg");
-    repeat: no-repeat;
-    position: bottom;
-    size: cover;
-    attachment: fixed;
-  }
 }
 .header {
   position: fixed;
@@ -24,30 +17,50 @@
 #hero {
   height: 100vh;
   position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+  background: {
+    image: url("../../imgs/hougaku_img-670x372.jpg");
+    repeat: no-repeat;
+    position: bottom right;
+    size: cover;
+    attachment: fixed;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }
   &-container {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
     text-align: center;
     width: 70%;
     margin: auto;
     max-width: 200px;
+    transition: opacity 0.5s ease;
+    z-index: 5;
     &-title {
       margin-bottom: 35px;
       h1 {
-        font-size: 32px;
         margin-bottom: 10px;
+        font-weight: normal;
+        font-size: 32px;
         line-height: 1.3em;
         text-align: justify-all;
       }
     }
-    hr {
-      margin-bottom: 33px;
-      border: {
-        style: none;
-        top: 2px solid $font-color;
-      }
+    &.fade-animation {
+      opacity: 0;
     }
   }
 }
@@ -56,29 +69,37 @@
 }
 
 .link-btn {
-  color: $font-color;
   display: block;
+  max-width: 180px;
   height: 40px;
-  line-height: 40px;
+  margin: 0 auto 20px;
+  color: $font-color;
   font-size: 20px;
+  line-height: 40px;
   border-radius: 50px;
   text-align: center;
-  margin: 0 auto 20px;
 }
 
 // --イントロ--
 #intro {
-  background: linear-gradient(rgba(51, 51, 51, 0), rgba(51, 51, 51, 0.9));
-  padding: 100px 45px 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: calc(100vh + 50px);
+  padding: 90px 50px;
+  background: linear-gradient(#524d4c, $base-color, rgba(51, 51, 51, 0.4) 75%);
   > h2 {
     color: $font-color;
     text-align: center;
-    font-size: 22px;
-    margin-bottom: 20px;
+    font-size: 26px;
+    margin-bottom: 40px;
   }
   &-explanation {
-    width: 80%;
     margin: auto;
+    margin-bottom: 20px;
+    > p {
+      line-height: 1.7;
+    }
   }
 }
 .explanation {
@@ -89,28 +110,36 @@
     margin-bottom: 7px;
   }
   .strong {
-    font-size: 18px;
+    font-size: 20px;
     color: $font-color;
   }
 }
 
 // --ディスクリプション--
 #descriptions {
-  background-color: rgba(51, 51, 51, 0.9);
-  padding: 150px 0 70px;
+  background-color: rgba(51, 51, 51, 0.6);
 }
 .description {
   position: relative;
-  padding: 20px 0;
-  height: 500px;
-  z-index: 0;
+  height: 100vh;
+  max-height: 500px;
+  overflow: hidden;
   &-container {
     height: 100%;
   }
   &-img {
     height: 100%;
-    max-height: 530px;
     position: relative;
+    &::before {
+      position: absolute;
+      white-space: pre;
+      top: 3%;
+      left: 0;
+      line-height: 0.9;
+      font-size: 100px;
+      color: rgba(200, 200, 200, 0.4);
+      z-index: 5px;
+    }
     &::after {
       content: "";
       display: block;
@@ -119,41 +148,59 @@
       right: 0;
       bottom: 0;
       left: 0;
-      opacity: 0.5;
+      opacity: 0.6;
     }
     > img {
       height: 100%;
       width: 100%;
+      vertical-align: bottom;
     }
   }
   &-wrapper {
     position: absolute;
-    top: 15%;
+    bottom: 10%;
     left: 50%;
     width: 55%;
     text-align: justify;
-    transform: translateX(-35%);
+    transform: translateX(-30%);
     z-index: 5;
     > h3 {
-      font-size: 30px;
+      font-size: 35px;
       text-align: right;
       line-height: 1.3;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
   }
 }
 #description1 {
-  .description-img::after {
-    background-image: linear-gradient(80deg, #ef7847, #5b3619 70%);
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .description-img {
+    &::before {
+      content: "Create\A and\Asend";
+    }
+    &::after {
+      background-image: linear-gradient(80deg, #ef7847, #5b3619 70%);
+    }
   }
 }
 #description2 {
+  background-color: $purple;
   .description {
-    &-img::after {
-      background-image: linear-gradient(280deg, #d290c0, #3c1d46 70%);
+    &-img {
+      &::before {
+        content: "Meet\Aunknown\Amusic";
+        text-align: right;
+        transform: translateX(-15%);
+        color: rgba(140, 140, 140, 0.4);
+      }
+      &::after {
+        background-image: linear-gradient(250deg, #d290c0, #3c1d46 60%);
+      }
     }
     &-wrapper {
-      transform: translateX(-75%);
+      transform: translateX(-70%);
       > h3 {
         text-align: left;
       }
@@ -161,8 +208,14 @@
   }
 }
 #description3 {
-  .description-img::after {
-    background-image: linear-gradient(110deg, #ddac61, #484848 70%);
+  background-color: $yerrow;
+  .description-img {
+    &::before {
+      content: "Connect\Awith\A friends";
+    }
+    &::after {
+      background-image: linear-gradient(80deg, #ddac61, #6b493d 95%);
+    }
   }
 }
 
@@ -177,7 +230,7 @@
   }
   .close {
     &-container {
-      padding: 30px 50px;
+      padding: 30px 60px;
       background-color: rgba(51, 51, 51, 0.5);
     }
     &-text {
@@ -194,32 +247,6 @@
       .sign-btn {
         background-color: $yerrow;
         margin-bottom: 0;
-      }
-    }
-  }
-}
-
-// --フッター--
-footer {
-  padding: 30px 50px;
-  background-color: $base-color;
-  text-align: center;
-  .footer {
-    &-link {
-      width: 200px;
-      display: flex;
-      justify-content: space-between;
-      margin: 0 auto 30px;
-    }
-    &-contact {
-      margin-bottom: 30px;
-      ul {
-        padding: 0;
-        li {
-          list-style: none;
-          display: inline-block;
-          font-size: 12px;
-        }
       }
     }
   }

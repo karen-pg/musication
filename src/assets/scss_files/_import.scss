@@ -18,3 +18,9 @@ $yerrow: #ddac61;
     outline: none;
   }
 }
+a {
+  transition: opacity 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+  }
+}

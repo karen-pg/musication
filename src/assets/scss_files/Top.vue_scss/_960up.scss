@@ -31,11 +31,11 @@
 
 // --イントロ--
 #intro {
-  padding: 250px 100px 20px;
+  padding: 100px 50px;
   > h2 {
-    font-size: 40px;
-    margin-bottom: 35px;
-    > br {
+    font-size: 50px;
+    margin-bottom: 50px;
+    > br:first-child {
       display: none;
     }
   }
@@ -50,28 +50,38 @@
 }
 
 // --ディスクリプション--
-#descriptions {
-  padding: 200px 0 150px;
-  position: relative;
-}
 .description {
-  margin-bottom: 100px;
+  max-width: 1500px;
+  margin: auto;
+  background-color: $base-color;
   &-container {
-    max-width: 800px;
+    max-width: 750px;
     margin: auto;
-    @media screen and(min-width:1300px) {
-      max-width: 1000px;
+  }
+  &-img {
+    max-width: 520px;
+    &::before {
+      font-size: 160px;
     }
   }
   &-wrapper {
     transform: translateX(-20%);
     > h3 {
-      font-size: 43px;
-      margin-bottom: 18px;
-      @media screen and(min-width:1100px) {
-        font-size: 53px;
-      }
+      font-size: 53px;
+      margin-bottom: 30px;
     }
+  }
+}
+#description1 .description-img::before,
+#description3 .description-img::before {
+  transform: translateX(-10%);
+}
+#description2 .description {
+  &-wrapper {
+    transform: translateX(-80%);
+  }
+  &-img::before {
+    transform: translateX(-10%);
   }
 }
 
