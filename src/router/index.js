@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 const Top = () => import("@/views/Top.vue");
-const Login = () => import("@/views/Login.vue");
-const Sign = () => import("@/views/Sign.vue");
+const SignIn = () => import("@/views/SignIn.vue");
+const SignUp = () => import("@/views/SignUp.vue");
 const Appli = () => import("@/views/Appli_views/Appli.vue");
 const Home = () => import("@/views/Appli_views/Home.vue");
 const Board = () => import("@/views/Appli_views/Board.vue");
@@ -22,8 +22,8 @@ Vue.use(VueRouter);
 
 const routes = [
   { path: "/top", component: Top },
-  { path: "/login", component: Login },
-  { path: "/sign", component: Sign },
+  { path: "/signin", component: SignIn },
+  { path: "/signup", component: SignUp },
   {
     path: "/appli/",
     component: Appli,

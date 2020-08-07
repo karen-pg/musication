@@ -6,14 +6,18 @@
       </router-link>
     </template>
     <template v-slot:header-menus>
-      <router-link :to="{name: 'Home'}" class="header-menu">始める</router-link>
-      <router-link to="/login" class="header-menu">ログイン</router-link>
-      <router-link to="/sign" class="header-menu">新規登録</router-link>
+      <router-link :to="{ name: 'Home' }" class="header-menu"
+        >始める</router-link
+      >
+      <router-link to="/signin" class="header-menu">ログイン</router-link>
+      <router-link to="/signup" class="header-menu">新規登録</router-link>
     </template>
     <template v-slot:slide-header-menus>
-      <router-link :to="{name: 'Home'}" class="slide-header-menu">始める</router-link>
-      <router-link to="/login" class="slide-header-menu">ログイン</router-link>
-      <router-link to="/sign" class="slide-header-menu">新規登録</router-link>
+      <router-link :to="{ name: 'Home' }" class="slide-header-menu"
+        >始める</router-link
+      >
+      <router-link to="/signin" class="slide-header-menu">ログイン</router-link>
+      <router-link to="/signup" class="slide-header-menu">新規登録</router-link>
     </template>
   </Header>
 </template>
