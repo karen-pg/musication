@@ -4,7 +4,7 @@
       <div v-for="post in posts" :key="post.id" class="post">
         <div class="post__header">
           <div class="post__header--icon">
-            <img src="@/assets/imgs/ifn0438.png" alt />
+            <img src="/imgs/ifn0438.png" alt />
           </div>
           <div class="post__header--detail">
             <p class="post__header--detail-user">{{post.user}}</p>

@@ -16,7 +16,7 @@
       <div class="musics">
         <div v-for="soaringMusic in soaringMusics" :key="soaringMusic.id" class="music">
           <div class="music__img">
-            <img src="@/assets/imgs/wondicon-ui-free-music_111271.png" alt="上昇楽曲" />
+            <img src="/imgs/wondicon-ui-free-music_111271.png" alt="上昇楽曲" />
           </div>
           <div class="music__detail">
             <div class="music__detail--title">

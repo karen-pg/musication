@@ -2,7 +2,7 @@
   <div class="genre-wrapper">
     <div v-for="val in array" :key="val.name" class="genre">
       <div class="genre__img">
-        <img src="@/assets/imgs/370354_s.jpg" alt="ジャンルごとの人気楽曲のサムネイル" />
+        <img src="/imgs/370354_s.jpg" alt="ジャンルごとの人気楽曲のサムネイル" />
       </div>
       <p class="genre__name">{{val.name}}</p>
     </div>

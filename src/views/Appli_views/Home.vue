@@ -58,7 +58,7 @@
       <div class="users-wrapper">
         <div v-for="populralityUser in populralityUsers" :key="populralityUser.id" class="user">
           <div class="user__img">
-            <img src="@/assets/imgs/ifn0438.png" alt="ユーザーのサムネイル" />
+            <img src="/imgs/ifn0438.png" alt="ユーザーのサムネイル" />
           </div>
           <div class="user__detail">
             <p class="user__detail--name">{{populralityUser.name|toAbridge(15)}}</p>

@@ -1,7 +1,7 @@
 <template>
   <div class="attention">
     <div class="attention__img">
-      <img src="@/assets/imgs/3438372_m.jpg" alt="ニュージャンルのイメージ画像" />
+      <img src="/imgs/3438372_m.jpg" alt="ニュージャンルのイメージ画像" />
     </div>
     <div class="attention__detail">
       <slot name="attention-detail"></slot>
