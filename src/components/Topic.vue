@@ -17,10 +17,10 @@
 </template>
 <style lang="scss" scoped>
 // 全体のモジュール
-@import "@/assets/scss_files/_import.scss";
+@import "../assets/scss_files/_import.scss";
 
 // アプリのモジュール
-@import "@/assets/scss_files/Appli_scss/Appli-child_scss/_import.scss";
+@import "../assets/scss_files/Appli_scss/Appli-child_scss/_import.scss";
 
 .pickup {
   text-align: center;

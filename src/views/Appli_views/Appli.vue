@@ -39,5 +39,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/Appli_scss/Appli.scss";
+@import "../../assets/scss_files/Appli_scss/Appli.scss";
 </style>

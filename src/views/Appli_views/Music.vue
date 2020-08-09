@@ -50,8 +50,8 @@
   </section>
 </template>
 <script>
-import MusicsWrapper from "@/components/MusicsWrapper.vue";
-import { appliMixin } from "@/appliMixin";
+import MusicsWrapper from "../../components/MusicsWrapper.vue";
+import { appliMixin } from "../../appliMixin";
 export default {
   components: {
     MusicsWrapper,
@@ -329,8 +329,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/Appli_scss/Appli-child_scss/_import.scss";
-@import "@/assets/scss_files/Appli_scss/Appli-child_scss/Music_scss/style.scss";
+@import "../../assets/scss_files/Appli_scss/Appli-child_scss/_import.scss";
+@import "../../assets/scss_files/Appli_scss/Appli-child_scss/Music_scss/style.scss";
 section {
   width: 100%;
 }

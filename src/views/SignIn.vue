@@ -36,6 +36,6 @@ export default {
 </script>
 <style
   lang="scss"
-  src="@/assets/scss_files/Sign-Login.vue_scss/style.scss"
+  src="../assets/scss_files/Sign-Login.vue_scss/style.scss"
   scoped
 ></style>

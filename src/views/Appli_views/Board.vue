@@ -42,10 +42,10 @@
   </section>
 </template>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/Appli_scss/Appli-child_scss/Board_scss/style.scss";
+@import "../../assets/scss_files/Appli_scss/Appli-child_scss/Board_scss/style.scss";
 </style>
 <script>
-import { appliMixin } from "@/appliMixin.js";
+import { appliMixin } from "../../appliMixin.js";
 export default {
   data() {
     return {

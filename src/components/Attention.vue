@@ -9,7 +9,7 @@
   </div>
 </template>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/_import.scss";
+@import "../assets/scss_files/_import.scss";
 .attention {
   border-bottom: 5px solid $sub-font-color;
   text-align: center;

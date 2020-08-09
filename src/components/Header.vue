@@ -33,7 +33,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/_import.scss";
+@import "../assets/scss_files/_import.scss";
 header {
   position: relative;
   display: flex;

@@ -58,7 +58,7 @@
   </section>
 </template>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/Appli_scss/Appli-child_scss/Genre_scss/style.scss";
+@import "../../assets/scss_files/Appli_scss/Appli-child_scss/Genre_scss/style.scss";
 </style>
 <script>
 import GenreWrapper from "../../components/GenreWrapper";

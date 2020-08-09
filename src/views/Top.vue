@@ -39,7 +39,7 @@
           <div class="description-container">
             <div class="description-img">
               <img
-                src="/imgs/person-music-group-guitar-crowd-concert-musician-barcelona-performance-art-festival-saxophone-performance-singing-guitarist-drummer-entertainment-street-musicians-performing-arts-social-gr.jpg"
+                src="/imgs/music-guitar-acoustic-guitar-musician-musical-instrument-bassist-singing-sound-guitarist-drums-bass-guitar-singer-songwriter-string-instrument-plucked-string-instruments-slide-guitar-10690.jpg"
                 alt="ギター"
               />
             </div>
@@ -109,8 +109,8 @@
   </div>
 </template>
 <script>
-import TopHeader from "@/components/TopHeader.vue";
-import Footer from "@/components/Footer.vue";
+import TopHeader from "../components/TopHeader.vue";
+import Footer from "../components/Footer.vue";
 export default {
   components: {
     TopHeader,
@@ -137,6 +137,6 @@ export default {
 </script>
 <style
   lang="scss"
-  src="@/assets/scss_files/Top.vue_scss/style.scss"
+  src="../assets/scss_files/Top.vue_scss/style.scss"
   scoped
 ></style>

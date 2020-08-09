@@ -100,7 +100,7 @@ import Attention from "../../components/Attention";
 import MusicsWrapper from "../../components/MusicsWrapper";
 import Topic from "../../components/Topic";
 import Footer from "../../components/Footer";
-import { appliMixin } from "@/appliMixin";
+import { appliMixin } from "../../appliMixin";
 export default {
   components: {
     Attention,
@@ -265,5 +265,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "@/assets/scss_files/Appli_scss/Appli-child_scss/Home_scss/style.scss";
+@import "../../assets/scss_files/Appli_scss/Appli-child_scss/Home_scss/style.scss";
 </style>
