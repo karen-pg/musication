@@ -18,7 +18,7 @@
           </div>
         </form>
         <a href="#" class="form-link">パスワードを忘れた場合</a>
-        <router-link to="/sign" class="form-link">新しいアカウントを作成</router-link>
+        <router-link to="/signup" class="form-link">新しいアカウントを作成</router-link>
       </div>
     </div>
     <Footer></Footer>

@@ -25,7 +25,7 @@
             <input type="submit" value="登録" class="submit" />
           </div>
         </form>
-        <router-link to="/login" class="form-link">すでにアカウントをお持ちの方はこちら</router-link>
+        <router-link to="/signin" class="form-link">すでにアカウントをお持ちの方はこちら</router-link>
       </div>
     </div>
     <Footer></Footer>

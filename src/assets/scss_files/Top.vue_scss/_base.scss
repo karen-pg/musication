@@ -23,7 +23,7 @@
   width: 100%;
   z-index: -20;
   background: {
-    image: url("/imgs/hougaku_img-670x372.jpg");
+    image: url("../../../../public/imgs/hougaku_img-670x372.jpg");
     repeat: no-repeat;
     position: bottom right;
     size: cover;
@@ -224,7 +224,7 @@
 #close {
   padding: 30px 0;
   background: {
-    image: url("/imgs/7981-00047-01-718x444.jpg");
+    image: url("../../../../public/imgs/7981-00047-01-718x444.jpg");
     position: center;
     repeat: no-repeat;
     size: cover;

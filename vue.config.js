@@ -1,5 +1,4 @@
 module.exports = {
-  outputDir: "docs",
-  assetsDir: "./",
-  publicPath: process.env.NODE_ENV === "production" ? "/musication/" : "./",
+  // outputDir: "docs",
+  publicPath: process.env.NODE_ENV === "production" ? "/musication/" : "/",
 };

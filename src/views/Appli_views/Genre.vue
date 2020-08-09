@@ -37,7 +37,10 @@
         <p class="pickup__title">VOCALOID</p>
         <div class="pickup__imgs">
           <div v-for="n in 4" :key="n" class="pickup__imgs--img">
-            <img src="/imgs/wondicon-ui-free-music_111271.png" alt="ピックアップジャンルの人気楽曲のサムネイル" />
+            <img
+              src="../../../public/imgs/wondicon-ui-free-music_111271.png"
+              alt="ピックアップジャンルの人気楽曲のサムネイル"
+            />
           </div>
         </div>
         <div class="pickup__detail">

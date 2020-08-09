@@ -39,7 +39,7 @@
           <div class="description-container">
             <div class="description-img">
               <img
-                src="/imgs/music-guitar-acoustic-guitar-musician-musical-instrument-bassist-singing-sound-guitarist-drums-bass-guitar-singer-songwriter-string-instrument-plucked-string-instruments-slide-guitar-10690.jpg"
+                src="../../public/imgs/music-guitar-acoustic-guitar-musician-musical-instrument-bassist-singing-sound-guitarist-drums-bass-guitar-singer-songwriter-string-instrument-plucked-string-instruments-slide-guitar-10690.jpg"
                 alt="ギター"
               />
             </div>
@@ -56,7 +56,7 @@
         <div id="description2" class="description">
           <div class="description-container">
             <div class="description-img">
-              <img src="/imgs/utGYwaL0fm.jpg" alt="音楽を聴く女性" />
+              <img src="../../public/imgs/utGYwaL0fm.jpg" alt="音楽を聴く女性" />
             </div>
             <div class="description-wrapper explanation">
               <h3>
@@ -73,7 +73,7 @@
           <div class="description-container">
             <div class="description-img">
               <img
-                src="/imgs/person-music-group-guitar-crowd-concert-musician-barcelona-performance-art-festival-saxophone-performance-singing-guitarist-drummer-entertainment-street-musicians-performing-arts-social-gr.jpg"
+                src="../../public/imgs/person-music-group-guitar-crowd-concert-musician-barcelona-performance-art-festival-saxophone-performance-singing-guitarist-drummer-entertainment-street-musicians-performing-arts-social-gr.jpg"
                 alt="演奏する二人の男性"
               />
             </div>

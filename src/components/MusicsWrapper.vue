@@ -2,7 +2,7 @@
   <div class="musics-wrapper">
     <div v-for="val in array" :key="val.id" class="music">
       <div class="music__img">
-        <img src="/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
+        <img src="../../public/imgs/wondicon-ui-free-music_111271.png" alt="楽曲のサムネイル" />
       </div>
       <div class="music__detail detail">
         <p class="music__detail--title">{{val.title|toAbridge(15)}}</p>
@@ -27,7 +27,7 @@
   </div>
 </template>
 <script>
-import { appliMixin } from "@/appliMixin.js";
+import { appliMixin } from "../appliMixin.js";
 export default {
   props: ["array"],
   mixins: [appliMixin],
