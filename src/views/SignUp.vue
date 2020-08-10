@@ -4,7 +4,7 @@
     <div class="main">
       <div class="form">
         <p class="heading">新規登録</p>
-        <form action="#" mathod="#" class="form-container">
+        <form action mathod="#" class="form-container">
           <div class="form-wrapper">
             <label for="name">ユーザー名</label>
             <input type="text" id="name" name="name" />

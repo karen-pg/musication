@@ -4,7 +4,7 @@
     <div class="main">
       <div class="form">
         <p class="heading">ログイン</p>
-        <form action="#" class="form-container">
+        <form action class="form-container">
           <div class="form-wrapper">
             <label for="mail">メールアドレス</label>
             <input type="mail" id="mail" />
@@ -17,7 +17,7 @@
             <input type="submit" value="ログイン" class="submit" />
           </div>
         </form>
-        <a href="#" class="form-link">パスワードを忘れた場合</a>
+        <a href class="form-link">パスワードを忘れた場合</a>
         <router-link to="/signup" class="form-link">新しいアカウントを作成</router-link>
       </div>
     </div>
