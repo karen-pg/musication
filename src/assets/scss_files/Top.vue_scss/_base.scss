@@ -52,9 +52,9 @@
     &-title {
       margin-bottom: 35px;
       h1 {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         font-weight: normal;
-        font-size: 32px;
+        font-size: 35px;
         line-height: 1.3em;
         text-align: justify-all;
       }
@@ -193,7 +193,7 @@
       &::before {
         content: "Meet\Aunknown\Amusic";
         text-align: right;
-        transform: translateX(-15%);
+        transform: translateX(-10%);
         color: rgba(140, 140, 140, 0.4);
       }
       &::after {

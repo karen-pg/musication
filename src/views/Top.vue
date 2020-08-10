@@ -19,7 +19,7 @@
       <section id="intro">
         <h2>
           音楽を
-          <br />全力で楽しむ
+          <br />全力で楽しむための
           <br />プラットフォーム
         </h2>
         <div class="explanation" id="intro-explanation">
