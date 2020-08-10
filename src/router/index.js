@@ -1,14 +1,14 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-const Top = () => import("../views/Top.vue");
-const SignIn = () => import("../views/SignIn.vue");
-const SignUp = () => import("../views/SignUp.vue");
-const Appli = () => import("../views/Appli_views/Appli.vue");
-const Home = () => import("../views/Appli_views/Home.vue");
-const Board = () => import("../views/Appli_views/Board.vue");
-const Music = () => import("../views/Appli_views/Music.vue");
-const Genre = () => import("../views/Appli_views/Genre.vue");
-const Search = () => import("../views/Appli_views/Search.vue");
+import Top from "../views/Top.vue";
+import SignIn from "../views/SignIn.vue";
+import SignUp from "../views/SignUp.vue";
+import Appli from "../views/Appli_views/Appli.vue";
+import Home from "../views/Appli_views/Home.vue";
+import Board from "../views/Appli_views/Board.vue";
+import Music from "../views/Appli_views/Music.vue";
+import Genre from "../views/Appli_views/Genre.vue";
+import Search from "../views/Appli_views/Search.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -27,7 +27,6 @@ const routes = [
   {
     path: "/appli/",
     component: Appli,
-    redirect: "/appli/home",
     children: [
       { path: "home", component: Home, name: "Home" },
       { path: "board", component: Board, name: "Board" },

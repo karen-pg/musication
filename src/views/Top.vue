@@ -124,9 +124,6 @@ export default {
   mounted() {
     window.addEventListener("scroll", this.fadeOut);
   },
-  destroyed() {
-    window.removeEventListener("scroll", this.fadeOut);
-  },
   methods: {
     fadeOut() {
       const intro = document.querySelector("#intro");
