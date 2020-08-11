@@ -17,11 +17,12 @@
           </div>
           <div class="post__main--tags">
             <ul>
-              <li>タグ</li>
-              <li>タグ</li>
+              <li v-for="(tag, index) in post.tags" :key="index">{{tag}}</li>
             </ul>
           </div>
-          <div class="post__main--text">{{post.text|toAbridge(60)}}</div>
+          <div class="post__main--text">
+            <p>{{post.text|toAbridge(100)}}</p>
+          </div>
         </div>
         <div class="post__footer">
           <div class="post__footer--icons">
@@ -52,19 +53,19 @@ export default {
       posts: [
         {
           id: 1,
-          user: "ユーザー1",
-          date: "2020/07/25",
-          title: "タイトル1",
-          tags: ["タグ", "タグ"],
+          user: "MUSICATION公式",
+          date: "2020/08/11",
+          title: "【トピック】を募集します！",
+          tags: ["お知らせ"],
           text:
-            "ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文ユーザー1の本文",
-          comments: 12,
-          goods: 530,
+            "MUSICATION公式です。\nいつもMUSICATIONをご利用戴き誠にありがとうございます。このたび、日頃のご愛顧に感謝を込めて、皆様からトップページに掲載する【トピック】を募集致します。\n2020年9月30日までに、お問い合わせページもしくはこの掲示板のコメント欄にご記入ください。",
+          comments: 1326,
+          goods: 23411,
         },
         {
           id: 2,
           user: "ユーザー2",
-          date: "2020/07/23",
+          date: "2020/08/10",
           title: "タイトル2",
           tags: ["タグ", "タグ"],
           text:
@@ -75,7 +76,7 @@ export default {
         {
           id: 3,
           user: "ユーザー3",
-          date: "2020/07/20",
+          date: "2020/08/10",
           title: "タイトル3",
           tags: ["タグ", "タグ"],
           text:
@@ -86,7 +87,7 @@ export default {
         {
           id: 4,
           user: "ユーザー4",
-          date: "2020/07/19",
+          date: "2020/08/19",
           title: "タイトル4",
           tags: ["タグ", "タグ"],
           text:
@@ -97,13 +98,13 @@ export default {
         {
           id: 5,
           user: "ユーザー5",
-          date: "2020/07/15",
+          date: "2020/08/19",
           title: "タイトル5",
           tags: ["タグ", "タグ"],
           text:
             "ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文ユーザー5の本文",
-          comments: 1326,
-          goods: 23411,
+          comments: 508,
+          goods: 3299,
         },
       ],
     };

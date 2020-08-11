@@ -24,7 +24,7 @@
             </div>
             <div class="music__detail--sub">
               <p>
-                <font-awesome-icon icon="music" class="icon" />
+                <font-awesome-icon icon="map-signs" class="icon" />
                 {{soaringMusic.genre}}
               </p>
               <p>

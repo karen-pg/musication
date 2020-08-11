@@ -1,5 +1,13 @@
 @import "../../import";
 
+.hover {
+  transition: opacity 0.3s ease;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
 .container {
   padding: 20px 0;
   border-bottom: 1px solid $sub-font-color;
@@ -7,6 +15,7 @@
     border: none;
   }
   > h1 {
+    @extend .hover;
     margin: {
       bottom: 10px;
       left: 20px;
@@ -15,6 +24,7 @@
   > p {
     font-size: 20px;
     margin-left: 20px;
+    @extend .hover;
   }
 }
 
