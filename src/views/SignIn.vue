@@ -14,10 +14,10 @@
             <input type="password" id="password" />
           </div>
           <div class="form-wrapper">
-            <input type="submit" value="ログイン" class="submit" />
+            <input type="submit" value="ログイン" class="submit" disabled />
           </div>
         </form>
-        <a href class="form-link">パスワードを忘れた場合</a>
+        <a href class="form-link" disabled>パスワードを忘れた場合</a>
         <router-link to="/signup" class="form-link">新しいアカウントを作成</router-link>
       </div>
     </div>

@@ -22,7 +22,7 @@
             <input type="password" id="password-confirm" name="password-confirm" />
           </div>
           <div class="form-wrapper">
-            <input type="submit" value="登録" class="submit" />
+            <input type="submit" value="登録" class="submit" disabled />
           </div>
         </form>
         <router-link to="/signin" class="form-link">すでにアカウントをお持ちの方はこちら</router-link>

@@ -3,7 +3,7 @@
     <div class="container">
       <form action>
         <div class="search">
-          <input type="text" v-model="val" class="search-bar" placeholder="キーワードを入力" />
+          <input type="text" v-model="val" class="search-bar" placeholder="キーワードを入力" disabled />
           <font-awesome-icon
             v-show="val.length"
             @click="clear()"
