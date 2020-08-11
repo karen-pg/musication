@@ -8,7 +8,7 @@
         <p class="music__detail--title">{{val.title|toAbridge(15)}}</p>
         <div class="music__detail__sub">
           <p class="music__detail__sub--genre">
-            <font-awesome-icon icon="music" class="icon" />
+            <font-awesome-icon icon="map-signs" class="icon" />
             {{val.genre}}
           </p>
           <div class="music__detail__sub--num">

@@ -31,6 +31,7 @@
     }
   }
   &__main {
+    margin-bottom: 8px;
     &--tags {
       margin-bottom: 8px;
       ul {
@@ -42,6 +43,10 @@
           @extend .post__header--detail-date;
         }
       }
+    }
+    &--text > p {
+      white-space: pre-line;
+      word-wrap: break-word;
     }
   }
   &__footer {

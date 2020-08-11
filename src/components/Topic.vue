@@ -33,7 +33,7 @@
     margin-bottom: 15px;
   }
   &__imgs {
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-bottom: 15px;
     display: flex;

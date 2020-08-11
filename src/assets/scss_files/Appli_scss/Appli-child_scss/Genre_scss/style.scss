@@ -5,18 +5,18 @@
 @import "../import";
 
 .pickup {
+  width: 80%;
+  max-width: 570px;
+  padding: 20px;
+  margin: auto;
   text-align: center;
   background-color: $font-color;
-  padding: 20px;
-  width: 70%;
-  margin: auto;
-  max-width: 570px;
   &__title {
     font-size: 25px;
     margin-bottom: 15px;
   }
   &__imgs {
-    width: 80%;
+    width: 85%;
     margin: auto;
     margin-bottom: 20px;
     display: flex;
